@@ -31,8 +31,4 @@ def sendcm(url:str) -> str:
     download_url = resp.headers["Location"]
     
     return download_url 
-    
-    
-    
-
-q
+   
