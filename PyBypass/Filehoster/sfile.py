@@ -3,7 +3,7 @@ from bs4  import  BeautifulSoup
 
 
 """
-"https?://(sfile\.mobi/)\S+
+https?://(sfile\.mobi/)\S+
 https://sfile.mobi/1nNX2v3K5iI7
 """
 
