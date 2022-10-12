@@ -6,7 +6,9 @@ import re
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 """
 Website: streamlare.com | sltube.org 
+
 Example: https://sltube.org/v/0rZ45DrdRqmlM81R
+
 Regex: https?://(streamlare|sltube\.(com|org)\/v/)\S+
 
 Result: {'Original': {'label': 'Original', 'size': 3977525914, 'url': 'https://larecontent.com/download?token=SBFGQV8RCRFbR0dDQAlvHG8cREREHgcCRwQLAQYEHUBAXwNXHVBcXm8cX'}, 'headers': {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4136.7 Safari/537.36'}}
