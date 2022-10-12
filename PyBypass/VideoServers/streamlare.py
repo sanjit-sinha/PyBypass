@@ -1,9 +1,6 @@
 from bs4 import BeautifulSoup
-import cloudscraper
 import requests
 import re
-
-
 
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -32,7 +29,6 @@ def streamlare_bypass(url):
 	csrf_token = soup.find("meta", {"name":"csrf-token"}).get("content")
 	xsrf_token =  client.cookies.get_dict()["XSRF-TOKEN"]
 	headers={"x-requested-with": "XMLHttpRequest", "x-csrf-token": csrf_token, "x-xsrf-token":xsrf_token, 'referer': url, "user-agent":user_agent}
-#	print(headers)
 	payload = {"id": content_id}
          
 	
