@@ -18,7 +18,7 @@ Note: The direct download link will only work with  proper headers wich was is i
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-def streamlare_bypass(url):
+def streamlare_bypass(url:str)-> str:
 	CONTENT_ID = re.compile(r"/[ve]/([^?#&/]+)")
 	API_LINK = "https://sltube.org/api/video/download/get"
 	user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4136.7 Safari/537.36"
