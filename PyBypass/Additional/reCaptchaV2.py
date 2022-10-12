@@ -2,10 +2,8 @@
 under construction 
 """
 
-
-
 from selenium.webdriver.support.wait import WebDriverWait
-fromselenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
