@@ -18,7 +18,7 @@ def mp4upload_bypass(url):
 	headers = {'referer':'https://mp4upload.com'}
 	token = url.split("/")[-1]		
 		
-	data = {
+	data =      {
 	             'op': 'download2',
 	             'id': token,
 	             'rand': '','referer': 'https://www.mp4upload.com/',
