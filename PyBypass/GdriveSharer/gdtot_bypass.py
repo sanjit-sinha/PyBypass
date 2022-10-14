@@ -12,6 +12,7 @@ https://new.gdtot.cfd/file/374103862
 https://new2.gdtot.sbs/file/105111102182
 
 crypt_example: b0lDek5LSCt6ZjVRR2EwZnY4T1EvVndqeDRtbCtTWmMwcGNuKy8wYWpDaz0%3D
+How to get gdtot crypt: https://www.youtube.com/watch?v=EfZ29CotRSU 
 """
 
 
