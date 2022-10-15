@@ -4,7 +4,7 @@ from bs4  import BeautifulSoup
 
 
 """
-https://(try2link.\com\/)\S+
+https?://(try2link.\com\/)\S+
 https://try2link.com/VrTmBY
 """
 
