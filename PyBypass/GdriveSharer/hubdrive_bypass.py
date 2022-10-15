@@ -11,7 +11,6 @@ regex: https?://(hubdrive)\S+
 https://hubdrive.me/file/1775403030
 https://hubdrive.me/file/1888207131
 
-
 crypt_example: b0lDek5LSCt6ZjVRR2EwZnY4T1EvVndqeDRtbCtTWmMwcGNuKy8wYWpDaz0%3D
 """
 
