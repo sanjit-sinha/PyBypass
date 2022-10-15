@@ -38,4 +38,3 @@ def sharer_pw_bypass(url: str, xsrf_token:str, laravel_session:str)-> str:
 
 
 
-'''
