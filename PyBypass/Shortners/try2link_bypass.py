@@ -39,4 +39,3 @@ def gtlinks_bypass(theforyou_link: str) -> str:
 	
 	
 	
-print(gtlinks_bypass("https://gtlinks.me/j34BPkf"))
