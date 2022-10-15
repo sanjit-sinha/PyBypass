@@ -3,8 +3,11 @@ import time
 import requests 
 from bs4 import BeautifulSoup
 
+"""
+https?://(hypershort\.com/)\S+
+https://hypershort.com/XNKRIUPe
+"""
 
-#example_url = https://hypershort.com/XNKRIUPe
 
 def hypershort_bypass(hypershort_url:str):
 	client= requests.Session()
@@ -15,6 +18,7 @@ def hypershort_bypass(hypershort_url:str):
 	token_response = client.get("https://blog.miuiflash.com/links/createToken.js").text
 	token_regex = re.search("itsToken\.value = \S+", token_response)
 	token = token_regex[0].split("=")[1].removesuffix('"').removeprefix(' "')
+
 	
 	inputs = soup.find(id="re-form").find_all(name="input")
 	data = { input.get('name'): input.get('value') for input in inputs }["getData"]
@@ -29,14 +33,13 @@ def hypershort_bypass(hypershort_url:str):
 	tokenize_url = soup.find(name="iframe", id="anonIt").get("src")
 	tokenize_url_resp = client.get(tokenize_url)
 	soup = BeautifulSoup(tokenize_url_resp.content, "html.parser")	
+	
+	time.sleep(1)
+
 	inputs = soup.find(id="go-link").find_all(name="input")
 	data = { input.get('name'): input.get('value') for input in inputs }
 	final_response = client.post("https://blog.miuiflash.com/blog/links/go", data=data,cookies= tokenize_url_resp.cookies, headers={"x-requested-with": "XMLHttpRequest", "referer":tokenize_url}).json()["url"]
 	
 	return final_response
 	
-	
-	
-	
-
 
