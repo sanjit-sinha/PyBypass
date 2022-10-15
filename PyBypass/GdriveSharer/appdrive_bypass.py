@@ -107,7 +107,7 @@ def appdrive_bypass(url: str, email=None, password=None, drive_id=None,  folder_
         
     if 'url' in response:
     	drive_link = response["url"]
-    	if urlparse(url).netloc in ("driveapp.in", "drivehub.in" , "gdflix.pro", "drivesharer.in", "drivebit.in", "drivelinks.in", "driveace.in", "drivepro.in", "gdflix.top")): return appdrive_lookalike(client,  drive_link)
+    	if urlparse(url).netloc in ("driveapp.in", "drivehub.in" , "gdflix.pro", "drivesharer.in", "drivebit.in", "drivelinks.in", "driveace.in", "drivepro.in", "gdflix.top"): return appdrive_lookalike(client,  drive_link)
     	else : return drive_link 
     		     	 	
     elif  'error' in response and response['error']: return response['message']
