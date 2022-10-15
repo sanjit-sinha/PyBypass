@@ -1,7 +1,9 @@
 import requests 
 
-
-#example_url = https://www.shortly.xyz/r/e11c7b121cf59a162be977eff54e6d6e
+"""
+https://(www\.shortly\.xyz\/)\S+
+https://www.shortly.xyz/r/e11c7b121cf59a162be977eff54e6d6e
+"""
 
 def shortly_bypass(shortly_url: str) -> str:
 	
@@ -12,3 +14,5 @@ def shortly_bypass(shortly_url: str) -> str:
 	response = requests.post(shortly_bypass_api, data={"id":token}, headers={"referer":"https://www.shortly.xyz/link"}).text
 	
 	return response
+	
+	
