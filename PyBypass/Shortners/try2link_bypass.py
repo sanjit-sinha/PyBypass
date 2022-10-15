@@ -2,14 +2,26 @@ import requests
 import time 
 from bs4 import BeautifulSoup 
 
-#example_url = https://gtlinks.me/j34BPkf , https://www.theforyou.in/?token=zrOFOaMK
 
-def theforyou_bypass(theforyou_link: str) -> str:
+
+"""
+https?://(gtlinks\.me\/)\S+
+https?://(www\.theforyou\.in\/\?token=)\S+
+https?://(loan\.kinemaster\.cc\/\?token=)\S+
+
+
+https://gtlinks.me/j34BPkf
+https://www.theforyou.in/?token=zrOFOaMK
+https://loan.kinemaster.cc/?token=zrOFOaMK
+"""
+
+def gtlinks_bypass(theforyou_link: str) -> str:
 
 	url = requests.get(theforyou_link).url
+	print(url)
 	url = url[:-1] if url[-1] == '/' else url
 	token = url.split("=")[-1]
-	domain = "https://go.bloggertheme.xyz/"
+	domain = "https://go.kinemaster.cc/"
 
 	
 	client = requests.Session()
@@ -24,3 +36,7 @@ def theforyou_bypass(theforyou_link: str) -> str:
 	headers={"x-requested-with": "XMLHttpRequest"}
 	bypassed_url = client.post(domain+"links/go", data=data, headers=headers).json()["url"]
 	return bypassed_url	
+	
+	
+	
+print(gtlinks_bypass("https://gtlinks.me/j34BPkf"))
