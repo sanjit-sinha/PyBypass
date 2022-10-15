@@ -4,12 +4,14 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
 
+"""
+https://github.com/xcscxr/Recaptcha-v3-bypass
+https://github.com/xcscxr/ouo-bypass/blob/main/ouo-bypass.py
 
-#https://github.com/xcscxr/Recaptcha-v3-bypass
-#https://github.com/xcscxr/ouo-bypass/blob/main/ouo-bypass.py
-#example_url = https://ouo.io/EKrr4s , https://ouo.press/EKrr4s
-
-# ===========================================================================================================
+https?://(ouo\.(io|press)\/)\S+
+https://ouo.io/EKrr4s
+https://ouo.press/EKrr4s
+"""
 
 def RecaptchaV3(ANCHOR_URL):
     url_base = 'https://www.google.com/recaptcha/'
@@ -31,7 +33,6 @@ def RecaptchaV3(ANCHOR_URL):
 
 ANCHOR_URL = 'https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lcr1ncUAAAAAH3cghg6cOTPGARa8adOf-y9zv2x&co=aHR0cHM6Ly9vdW8uaW86NDQz&hl=en&v=1B_yv3CBEV10KtI2HJ6eEXhJ&size=invisible&cb=4xnsug1vufyr'
 
-# ===========================================================================================================
 
 def ouo_bypass(url: str):
     client = requests.Session()
@@ -58,6 +59,4 @@ def ouo_bypass(url: str):
     bypassed_link= str(res.headers.get("Location"))
     return bypassed_link
 
-
-# ===========================================================================================================
 
