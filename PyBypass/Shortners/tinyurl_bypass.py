@@ -2,7 +2,7 @@ import requests
 
 
 """
-https://(tinyurl.\com\/)\S+
+https?://(tinyurl.\com\/)\S+
 https://tinyurl.com/2h3pttrc
 """
 
