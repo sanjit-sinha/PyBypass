@@ -7,7 +7,7 @@ https?://(safeurl\.sirigan\.my\.id\/)\S+
 https://safeurl.sirigan.my.id/proses.html?asu=WVVoU01HTkViM1pNTWxZeFRHMDVlVnAzUFQwPQ=
 """
 
-def srigan_myid_bypass(srigan_link:str) -> str:
+def sirigan_bypass(srigan_link:str) -> str:
     
     client = requests.Session()
     response = client.get(srigan_link)
