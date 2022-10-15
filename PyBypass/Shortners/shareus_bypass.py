@@ -1,6 +1,10 @@
 import requests
 import re
 
+"""
+https?://(shareus\.in\/\?i=)\S+
+https://shareus.in/?i=WbIeAA
+"""
 
 def shareus_bypassser(shareus_url: str) -> str:
 	
