@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 
 """
-
 ['pjointe.com', 'dl4free.com', 'tenvoi.com', 'piecejointe.net', 'mesfichiers.org', 'desfichiers.com', 'megadl.fr', 'dfichiers.com', 'alterupload.com', 'cjoint.net', '1fichier.com']
 
 https?://(pjointe|dl4free|tenvoi|piecejointe|mesfichiers|desfichiers|megadl|dfichiers|alterupload|cjoint|1fichier|\.com/\?)\S+
@@ -13,7 +12,6 @@ https://1fichier.com/?plpf4551k7lnlp411ujy
 
 def fichier(url:str) -> str:
 	client = requests.Session()
-	
 	response = client.get(url)
 	
 	soup = BeautifulSoup(response.text, "html.parser")
