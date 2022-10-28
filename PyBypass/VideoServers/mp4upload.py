@@ -32,5 +32,3 @@ def mp4upload_bypass(url):
 	bypassed_json["headers "] = headers 
 	return bypassed_json
 
-
-print(mp4upload_bypass("https://www.mp4upload.com/o62z8p1qqpwi"))
