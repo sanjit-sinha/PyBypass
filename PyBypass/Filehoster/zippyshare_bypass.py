@@ -9,7 +9,7 @@ https://www81.zippyshare.com/v/R5y49jcb/file.html
 """
 
 
-def zippyshare(url:str)-> str:
+def zippyshare_bypass(url:str)-> str:
 	client = requests.Session()
 	response = client.get(url)
 	
