@@ -1,5 +1,4 @@
 import requests 
-from bs4 import BeautifulSoup 
 
 
 """
@@ -29,9 +28,7 @@ def uploadbaz_bypass(url: str)-> str:
 
         }
 
-        response = client.post(url, headers=headers, data=data, allow_redirects=False)
-        soup = BeautifulSoup(response.text, "html.parser")  
-        return response.headers["Location"])
-  
-
-                
+        response = client.post(url, headers=headers, data=data, allow_redirects=False) 
+        return response.headers["Location"]
+        
+        
