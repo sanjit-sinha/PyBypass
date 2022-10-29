@@ -17,10 +17,10 @@ class RequiredValueNotFoundError(Exception):
 	"""
 
 class UnableToBypassError(Exception):
-		"""
-		Raise when script is unable to bypass the given url. 
-		( possible reason can be wrong link, wrong parameters or script is patched)
-		"""
+	"""
+	Raise when script is unable to bypass the given url. 
+	( possible reason can be wrong link, wrong parameters or script is patched)
+	"""
 		
 		
 def _requiredvaluechecker(function):
