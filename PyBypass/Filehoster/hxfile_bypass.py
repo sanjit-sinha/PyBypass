@@ -7,7 +7,7 @@ https?://(hxfile\.co/)\S+
 https://hxfile.co/k4ibjdydvbf9
 """
 
-def hxfile(url: str)-> str:
+def hxfile_bypass(url: str)-> str:
         
         url = url[:-1] if url[-1] == '/' else url
         token = url.split("/")[-1]
