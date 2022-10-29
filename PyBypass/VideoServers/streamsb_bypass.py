@@ -6,6 +6,8 @@ Website: streamsb.com ( have many domain )
 
 domains = ['sbembed.com', 'sbembed1.com', 'sbplay.org', 'sbvideo.net', 'streamsb.net', 'sbplay.one', 'cloudemb.com', 'playersb.com', 'tubesb.com', 'sbplay1.com', 'embedsb.com', 'watchsb.com', 'sbplay2.com', 'japopav.tv', 'viewsb.com', 'sbplay2.xyz', 'sbfast.com', 'sbfull.com', 'javplaya.com', 'sbembed1.com', 'sbanh.com'] 
 
+https?://(watchsb|streamsb)\.(com|net)\/\S+
+
 https://sbanh.com/zsb9eanyxe1q.html
 https://watchsb.com/e/ggyqfyu52zs2.html
 https://sbplay2.xyz/e/v4yyijf2e2wa
