@@ -6,7 +6,7 @@ https?://(userscloud\.com/)\S+
 https://userscloud.com/fwd5yscjpot3
 """
 
-def userscloud(url: str)-> str:
+def userscloud_bypass(url: str)-> str:
         
         url = url[:-1] if url[-1] == '/' else url
         token = url.split("/")[-1]
