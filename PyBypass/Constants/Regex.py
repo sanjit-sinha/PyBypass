@@ -1,5 +1,5 @@
 
-REGEX = {
+MAIN_REGEX = {
 	"https?://(gplinks\.co\/)\S+": ["gplinks", "gplinks_bypass"],
 	"https?://(try2link\.com\/)\S+": ["try2link", "try2link_bypass"],
 	"https?://(adf\.ly/)\S+": ["adfly", "adfly_bypass"],
