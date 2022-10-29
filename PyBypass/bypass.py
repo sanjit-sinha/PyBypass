@@ -2,8 +2,7 @@ class BypasserNotFoundError(Exception):
 	"""
 	Raise when there is no bypasser of the giver url.
 	"""
-	
-	
+		
 
 class UrlConnectionError(Exception):
 	"""
