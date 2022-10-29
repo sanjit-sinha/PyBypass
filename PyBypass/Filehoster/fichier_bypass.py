@@ -10,7 +10,7 @@ https?://(pjointe|dl4free|tenvoi|piecejointe|mesfichiers|desfichiers|megadl|dfic
 https://1fichier.com/?plpf4551k7lnlp411ujy
 """
 
-def fichier(url:str) -> str:
+def fichier_bypass(url:str) -> str:
 	client = requests.Session()
 	response = client.get(url)
 	
