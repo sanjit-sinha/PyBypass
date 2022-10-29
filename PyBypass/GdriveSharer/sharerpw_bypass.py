@@ -13,7 +13,7 @@ If you use logout from website, cookies will become invalid. h
 Get your xsrf_token,  laravel_session of sharer.pw from developer tools of your browser.
 '''
 
-def sharerpw_bypass(url: str, xsrf_token:str, laravel_session:str)-> str:
+def sharerpw_bypass(url: str, xsrf_token:None, larvel_session: None)-> str:
     
     client = requests.Session()
     client.cookies["XSRF-TOKEN"] = xsrf_token
@@ -34,7 +34,6 @@ def sharerpw_bypass(url: str, xsrf_token:str, laravel_session:str)-> str:
     	else: return drive_link["message"]
     
   
-
 
 
 
