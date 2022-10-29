@@ -6,7 +6,7 @@ https?://(shareus\.in\/\?i=)\S+
 https://shareus.in/?i=WbIeAA
 """
 
-def shareus_bypassser(shareus_url: str) -> str:
+def shareus_bypass(shareus_url: str) -> str:
 	
 	token = shareus_url.split("=")[-1]
 	domain = "https://us-central1-my-apps-server.cloudfunctions.net/r?shortid="
