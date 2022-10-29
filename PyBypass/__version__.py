@@ -1,5 +1,3 @@
-
-
 __title__ = "PyBypass"
 __description__ = "Python module of bypassing different kind of links."
 #__url__ = ""
