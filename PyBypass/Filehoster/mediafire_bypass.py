@@ -8,7 +8,7 @@ https://www.mediafire.com/download/8nqmnblivkv6tk2
 https?://(www\.mediafire\.com\/download/)\S+
 """
 
-def mediafire(mediafire_url: str) -> str:  
+def mediafire_bypass(mediafire_url: str) -> str:  
     link = re.search(r'\bhttps?://.*mediafire\.com\S+', mediafire_url)[0]
     page = BeautifulSoup(requests.get(link).content, 'html.parser')
     
