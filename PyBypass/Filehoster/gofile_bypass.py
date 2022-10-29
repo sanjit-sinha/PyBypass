@@ -4,7 +4,7 @@ import requests
 
 """
 https?://(gofile\.io\/d/)\S+
-https://gofile.io/d/OEELc7
+https://gofile.io/d/HZMNA4
 """
 
 def gofile_bypass(url:str) -> str:
