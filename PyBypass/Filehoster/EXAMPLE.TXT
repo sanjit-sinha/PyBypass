@@ -1,0 +1,50 @@
+
+
+['anonfiles.com', 'antfiles.com', '1fichier.com', 'gofile.io', 'hxfile.co', 'krakenfiles.com', 'mdisk.me', 'www.mediafire.com', 'pixeldrain.com', 'racaty.net', 'send.cm', 'sfile.mobi', 'www.solidfiles.com', 'sourceforge.net', 'uploadbaz.me', 'www.upload.ee', 'uppit.com', 'userscloud.com', 'we.tl', 'disk.yandex.com', 'www81.zippyshare.com']
+
+
+https://anonfiles.com/32j4A56dyd
+https://antfiles.com/?dl=9dcf91d745f551a09845b3da580077a6
+https://1fichier.com/?plpf4551k7lnlp411ujy
+https://gofile.io/d/OEELc7
+https://hxfile.co/k4ibjdydvbf9
+https://krakenfiles.com/view/JEp6lUTRUW/file.html
+https://mdisk.me/convertor/53x30/vNv9FC
+https://www.mediafire.com/download/8nqmnblivkv6tk2
+https://pixeldrain.com/u/WeF9VBxQq
+https://racaty.net/10w86dphf8y2
+https://send.cm/ce3zr4cp0i7k
+https://sfile.mobi/1nNX2v3K5iI7
+http://www.solidfiles.com/v/WqL3V2QjdmDZv
+https://sourceforge.net/projects/derpfestveux/files/DerpFest-13-Community-Tango-veux-20221004-2258.zip/download
+https://uploadbaz.me/tk3l8aygmwge
+https://www.upload.ee/files/14550364/908.txt.html
+http://uppit.com/9hu73urjwzrt
+https://userscloud.com/fwd5yscjpot3
+https://we.tl/t-NsSDiMQNYF
+https://disk.yandex.com/d/0PjgLth7S7o0Iw
+https://www81.zippyshare.com/v/R5y49jcb/file.html
+
+    {
+    'https?://(anonfiles\.com)\S+': ['anonfiles', 'anonfiles_bypass'],
+    'https?://(antfiles\.com\/\?dl\=)\S+': ['antfiles', 'antfiles_bypass'],
+    'https?://(pjointe|dl4free|tenvoi|piecejointe|mesfichiers|desfichiers|megadl|dfichiers|alterupload|cjoint|1fichier|\.com/\?)\S+': ['1fichier', 'fichier_bypass'],
+    'https?://(gofile\.io\/d/)\S+': ['gofile', 'gofile_bypass'],
+    'https?://(hxfile\.co/)\S+': ['hxfile', 'hxfile_bypass'],
+    'https?://(krakenfiles.\com\/view/)\S+ ': ['krakenfiles', 'krakenfiles_bypass'],
+    'https?://(mdisk\.me\/convertor)\S+ ': ['mdisk', 'mdisk_bypass'],
+    'https?://(www\.mediafire\.com\/download/)\S+ ': ['mediafire', 'mediafire_bypass'],
+    'https?://(pixeldrain\.com\/(l|u)\/)\S+ ': ['pixeldrain', 'pixeldrain_bypass'],
+    'https?://(racaty\.net/)\S+ ': ['racaty', 'racaty_bypass'],
+    'https?://(send\.cm/)\S+': ['sendcm', 'sendcm_bypass'],
+    'https?://(sfile\.mobi/)\S+': ['sfile', 'sfile_bypass'],
+    'https?://(www\.solidfiles\.com/v/)\S+ ': ['solidfiles', 'solidfiles_bypass'],
+    'https?://(sourceforge\.net/)\S+': ['sourceforge', 'sourceforge_bypass'],
+    'https?://(uploadbaz\.me/)\S+': ['uploadbaz', 'uploadbaz_bypass'],
+    'https?://(www\.upload\.ee/)\S+': ['uploadee', 'uploadee_bypass'],
+    'https?://(uppit\.com/)\S+': ['uppit', 'uppit_bypass'],
+    'https?://(userscloud\.com/)\S+': ['userscloud', 'userscloud_bypass'],
+    'https?://(we\.tl/)\S+': ['wetransfer', 'wetransfer_bypass'],
+    'https?://(yadi.sk|disk.yandex.com)\S+': ['yandex', 'yandex_bypass'],
+    'https?://www\d+\.zippyshare\.com/v/[^/]+/file\.html': ['zippyshare', 'zippyshare_bypass']
+}
