@@ -9,7 +9,7 @@ https://try2link.com/VrTmBY
 """
 
 def try2link_bypass(url):
-	client = cloudscraper.create_scraper(allow_brotli=False)
+	client = requests.Session()
 	
 	url = url[:-1] if url[-1] == '/' else url
 	
@@ -25,4 +25,5 @@ def try2link_bypass(url):
 	
 	bypassed_url = client.post('https://try2link.com/links/go', headers=headers,data=data)
 	return bypassed_url.json()["url"]
-		
+	
+	
