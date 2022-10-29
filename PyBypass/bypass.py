@@ -1,4 +1,3 @@
-
 class BypasserNotFoundError(Exception):
 	"""
 	Raise when there is no bypasser of the giver url.
@@ -14,10 +13,16 @@ class UrlConnectionError(Exception):
 	
 class RequiredValueNotFoundError(Exception):
 	"""
-	Raise when user didn't provide required parameters.
+	Raise when user didn't provided required parameters.
 	( Example: gdot_crypt, appdrive_email etc )
 	"""
 
+class UnableToBypassError(Exception):
+		"""
+		Raise when script is unable to bypass the given url. 
+		( possible reason can be wrong link, wrong parameters or script is patched)
+		"""
+		
 		
 def _requiredvaluechecker(function):
 	
@@ -47,8 +52,17 @@ class Pybypass:
 
 	@_requiredvaluechecker
 	def redirect_function(self, url, bypasser_function, **kwargs):
-		return eval(bypasser_function + f"('{url}')")
+		try:
+			bypassed_value = eval(bypasser_function + f"('{url}')")
+		except Exception as e:
+			raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
+	
 		
+		if bypassed_value == None:
+		    raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
+		return bypassed_value
+		 
+		 
 									
 	def bypass(self, url, name=None, **kwargs):			
 		
@@ -85,7 +99,3 @@ def bypass(url, name=None, **kwargs):
 	return bypasser.bypass(url , name=name, **kwargs)
 
 					
-	
-print(bypass("https://try2link.com/VrTmBY",  crypt="xyz"))		
-
-			
