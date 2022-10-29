@@ -1,0 +1,13 @@
+https://appdrive.info/file/78owWyzsKPRuU5QB2VyG
+https://new2.gdtot.sbs/file/105111102182
+https://hubdrive.me/file/1775403030
+https://sharer.pw/file/XuV3WQknRbB
+
+["appdrive.info", "new2.gdtot.sbs", "hubdrive.me", "sharer.pw"]
+
+{
+    "https?://(appdrive|driveapp|drivehub|gdflix|drivesharer|drivebit|drivelinks|driveace|drivepro)\.   (info|in|pro|top)\/file/\S+":["appdrive", "appdrive_bypass"],
+    "https?://(.+)\.gdtot\.(.+)\/\S+\/\S+" : ["gdtot", "gdtot_bypass"],
+    "https?://(hubdrive)\S+": ["hubdrive", "hubdrive_bypass"],
+    "https?://(sharer\.pw\/file)\S+": ["sharerpw", "sharerpw_bypass"],
+}
