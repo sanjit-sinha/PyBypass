@@ -11,7 +11,7 @@ www.wetransfer.py
 """
 
 
-def wetransfer(url: str) -> str:
+def wetransfer_bypass(url: str) -> str:
     
     if url.startswith("https://we.tl/"):
         r = requests.head(url, allow_redirects=True)
