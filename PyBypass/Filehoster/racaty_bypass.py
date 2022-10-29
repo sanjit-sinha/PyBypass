@@ -7,7 +7,7 @@ https?://(racaty\.net/)\S+
 https://racaty.net/10w86dphf8y2
 """
 
-def racaty(url: str)-> str:
+def racaty_bypass(url: str)-> str:
         
         url = url[:-1] if url[-1] == '/' else url
         token = url.split("/")[-1]
