@@ -7,7 +7,7 @@ https?://(gofile\.io\/d/)\S+
 https://gofile.io/d/OEELc7
 """
 
-def gofile(url:str) -> str:
+def gofile_bypass(url:str) -> str:
     
     api_uri = "https://api.gofile.io" 
     url = url[:-1] if url[-1] == '/' else url
