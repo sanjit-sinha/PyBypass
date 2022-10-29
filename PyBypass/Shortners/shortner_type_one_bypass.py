@@ -2,19 +2,9 @@ from bs4 import BeautifulSoup
 import requests 
 import time 
 import re
-
-
+ 
+ 
 shortner_dict =  {
-     "https://urlsopen.com/": [
-         "https?://(urlsopen\.com/)\S+",
-         "https://short.url2go.in/",
-         1
-     ],
-     "https://short.url2go.in/": [
-         "https?://(short\.url2go\.in/)\S+",
-         "https://short.url2go.in/",
-         1
-     ],
      "https://earn4link.in/": [
          "https?://(earn4link\.in/)\S+",
          "https://m.open2get.in/",
@@ -67,7 +57,7 @@ shortner_dict =  {
      ],
      "https://shortingly.me/": [
          "https?://(shortingly\.me/)\S+",
-         "https://go.techyjeeshan.xyz/",
+         "https://go.answerhub.online/",
          5
      ],
      "https://open2get.in/": [
@@ -130,31 +120,30 @@ shortner_dict =  {
          "https://rocklink.in/",
          6
       ]
-
+ 
  }
-
+ 
 def shortner_bypass(shortner_url:str, domain: str, sleep_time:int)-> str:
-	
-	shortner_url = shortner_url[:-1] if shortner_url[-1] == '/' else shortner_url
-	token = shortner_url.split("/")[-1]
-	
-	client = requests.Session()
-	response = client.get(domain+token, headers={"referer":domain+token})
-	
-	soup = BeautifulSoup(response.content, "html.parser")	
-	inputs = soup.find(id="go-link").find_all(name="input")
-	data = { input.get('name'): input.get('value') for input in inputs }
-	
-
-	time.sleep(sleep_time)
-	headers={"x-requested-with": "XMLHttpRequest"}
-	bypassed_url = client.post(domain+"links/go", data=data, headers=headers).json()["url"]
-	return bypassed_url
-	
-
-def type_one_shortner_detector(shortner_url: str) ->  str:
-	for (key,value) in shortner_dict.items():
-		if bool(re.match(FR"{value[0]}", shortner_url)): return shortner_bypass(shortner_url=shortner_url, domain=value[1], sleep_time=value[2])
-	return None 
-	
-	
+    
+    shortner_url = shortner_url[:-1] if shortner_url[-1] == '/' else shortner_url
+    token = shortner_url.split("/")[-1]
+    
+    client = requests.Session()
+    response = client.get(domain+token, headers={"referer":domain+token})
+    
+    soup = BeautifulSoup(response.content, "html.parser")   
+    inputs = soup.find(id="go-link").find_all(name="input")
+    data = { input.get('name'): input.get('value') for input in inputs }
+    
+ 
+    time.sleep(sleep_time)
+    headers={"x-requested-with": "XMLHttpRequest"}
+    bypassed_url = client.post(domain+"links/go", data=data, headers=headers).json()["url"]
+    return bypassed_url
+    
+ 
+def shortner_type_one_bypass(shortner_url: str) ->  str:
+    for (key,value) in shortner_dict.items():
+        if bool(re.match(FR"{value[0]}", shortner_url)): return shortner_bypass(shortner_url=shortner_url, domain=value[1], sleep_time=value[2])
+    return None 
+    
