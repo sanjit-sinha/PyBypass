@@ -7,7 +7,7 @@ https?://(uploadbaz\.me/)\S+
 https://uploadbaz.me/tk3l8aygmwge
 """
 
-def uploadbaz(url: str)-> str:
+def uploadbaz_bypass(url: str)-> str:
         
         url = url[:-1] if url[-1] == '/' else url
         token = url.split("/")[-1]
