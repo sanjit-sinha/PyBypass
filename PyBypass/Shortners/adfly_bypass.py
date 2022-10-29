@@ -4,7 +4,6 @@ from base64 import b64decode
 from urllib.parse import unquote
 
 #https://github.com/xcscxr/adfly-bypass
-#============================================================================================================
 
 def decrypt_url(code):
     a, b = '', ''
@@ -30,7 +29,6 @@ def decrypt_url(code):
 
     return decrypted.decode('utf-8')
 
-# ============================================================================================================
 
 def adfly_bypass(url:str) -> str:
     res = requests.get(url).text
@@ -53,7 +51,7 @@ def adfly_bypass(url:str) -> str:
     
     return out['bypassed_url'] 
     
-# ===========================================================================================================   
+   
     
    
 
