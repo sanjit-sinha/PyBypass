@@ -7,7 +7,7 @@ https?://(uppit\.com/)\S+
 http://uppit.com/9hu73urjwzrt
 """
 
-def uppit(url: str)-> str:
+def uppit_bypass(url: str)-> str:
         
         url = url[:-1] if url[-1] == '/' else url
         token = url.split("/")[-1]
