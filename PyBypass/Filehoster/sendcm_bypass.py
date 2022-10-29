@@ -10,7 +10,7 @@ folder support isn't added yet.
 """
 
 
-def sendcm(url:str) -> str:
+def sendcm_bypass(url:str) -> str:
     
     base_url = "https://send.cm/"
     client = requests.Session()
