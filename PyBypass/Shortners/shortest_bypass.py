@@ -3,11 +3,17 @@ import time
 import requests
 from urllib.parse import urlparse
 
-#https://shorte.st/ ( cllkme.com, festyy.com, gestyy.com, corneey.com, destyy.com, ceesty.com )
 
-def shorte_st_bypass(shorte_st_link: str) -> str:
+"""
+https://shorte.st/ 
+http://festyy.com/eavTIP
+https?://(shorte|festyy|gestyy|corneey|destyy|ceesty)\.(st|com)\/\S+
+
+subdomains: [cllkme.com, festyy.com, gestyy.com, corneey.com, destyy.com, ceesty.com]
+"""
+
+def shortest_bypass(url: str) -> str:
   
-    url= shorte_st_link   
     parsed_url = urlparse(url)
   
     client = requests.Session()
@@ -24,4 +30,5 @@ def shorte_st_bypass(shorte_st_link: str) -> str:
     dest_url = re.findall('"(.*?)"', response.text)[1].replace('\/','/')
     
     return dest_url
+
 
