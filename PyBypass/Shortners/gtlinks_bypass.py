@@ -15,12 +15,17 @@ https://www.theforyou.in/?token=zrOFOaMK
 https://loan.kinemaster.cc/?token=zrOFOaMK
 """
 
-def gtlinks_bypass(theforyou_link: str) -> str:
-
-	url = requests.get(theforyou_link).url
-	print(url)
+def gtlinks_bypass(url: str) -> str:
+	
 	url = url[:-1] if url[-1] == '/' else url
-	token = url.split("=")[-1]
+	
+	if "theforyou.in" in url:
+		token = url.split("=")[-1]
+	else:
+		url = requests.get(url).url
+		token = url.split("=")[-1]
+	
+
 	domain = "https://go.kinemaster.cc/"
 
 	
@@ -35,7 +40,6 @@ def gtlinks_bypass(theforyou_link: str) -> str:
 	time.sleep(5)
 	headers={"x-requested-with": "XMLHttpRequest"}
 	bypassed_url = client.post(domain+"links/go", data=data, headers=headers).json()["url"]
-	return bypassed_url	
+	return bypassed_url
 	
-	
-	
+		
