@@ -57,7 +57,7 @@ shortner_dict =  {
      ],
      "https://shortingly.me/": [
          "https?://(shortingly\.me/)\S+",
-         "https://go.answerhub.online/",
+         "https://go.techyjeeshan.xyz/",
          5
      ],
      "https://open2get.in/": [
