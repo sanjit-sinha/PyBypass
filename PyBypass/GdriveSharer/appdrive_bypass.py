@@ -15,7 +15,7 @@ Note:- Each Domain require login email and password. You have to login all websi
 
 
 Parameters: 
-email and password params should be of website not GOOGLE ACCOUNT
+appdrive_email and appdrive_password params should be of website not GOOGLE ACCOUNT
 drive_id = team drive ID (optional) (for MyDrive, keep this field empty)
 folder_id =  drive folder ID (optional)
 
@@ -37,7 +37,7 @@ appdrive_bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1", email="xyz@gm
 """
 
 
-def account_login(client, url, email, password):
+def account_login(client, url, appdrive_email, appdrive_password):
     data = {
         'email': email,
         'password': password
@@ -75,7 +75,7 @@ def appdrive_lookalike(client, drive_link):
 	except: return drive_link
 
 			
-def appdrive_bypass(url: str, email=None, password=None, drive_id=None,  folder_id=None) -> str:
+def appdrive_bypass(url: str, appdrive_email=None, appdrive_password=None, drive_id=None,  folder_id=None) -> str:
 
     client = requests.Session()
     client.headers.update({
@@ -96,7 +96,7 @@ def appdrive_bypass(url: str, email=None, password=None, drive_id=None,  folder_
     data = { 'type': 1,  'key': key, 'action': 'original'}
     
     if ddl_btn != None:  data['action'] = 'direct'
-    else : account_login(client, url, email, password)
+    else : account_login(client, url, appdrive_email, appdrive_password)
     	 
   
         
