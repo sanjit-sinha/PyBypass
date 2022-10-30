@@ -1,10 +1,10 @@
 import re
 import requests
-from Shortners import *
-from Filehoster import *
-from VideoServers import *
-from GdriveSharer import *
-from Constants import *
+from .Shortners import *
+from .Filehoster import *
+from .VideoServers import *
+from .GdriveSharer import *
+from .Constants import *
 
 
 class BypasserNotFoundError(Exception):
