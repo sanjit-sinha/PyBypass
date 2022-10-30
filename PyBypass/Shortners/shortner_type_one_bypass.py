@@ -22,7 +22,7 @@ shortner_dict =  {
      ],
      "https://go.rocklinks.net/": [
          "https?://(go\.rocklinks\.net/)\S+",
-         "https://blog.disheye.com/",
+         "https://dwnld.povathemes.com/",
          10
      ],
      "https://rocklinks.net/": [
