@@ -43,22 +43,22 @@ def _requiredvaluechecker(function):
 		
 		func_name = args[-1]
 		if func_name == "gdtot_bypass":	
-			if ("crypt" in kwargs) == False:
-				raise RequiredValueNotFoundError(" Missing required parameter 'crypt'. please enter yout GDOT crypt value")
+			if ("gdtot_crypt" in kwargs) == False:
+				raise RequiredValueNotFoundError(" Missing required parameter 'gdtot_crypt'. please enter yout GDOT crypt value")
 				
 		if func_name =="appdrive_bypass":	
-			if all([("email" in kwargs ), ("password" in kwargs)])== False:	
-				raise RequiredValueNotFoundError("Missing required parameter 'email' and 'password. please enter yout appdrive credential value to bypass the given link.")
+			if all([("appdrive_email" in kwargs ), ("appdrive_password" in kwargs)])== False:	
+				raise RequiredValueNotFoundError("Missing required parameter 'appdrive_email' and 'appdrive_password. please enter yout appdrive credential value to bypass the given link.")
 				
 				
 		if func_name =="hubdrive_bypass":			
-			if ("crypt" in kwargs) == False:
-				raise RequiredValueNotFoundError(" Missing required parameter 'crypt'. please enter your hubdrive crypt value")
+			if ("hubdrive_crypt" in kwargs) == False:
+				raise RequiredValueNotFoundError(" Missing required parameter 'hubdrive_crypt'. please enter your hubdrive crypt value")
 		
 				
 		if func_name =="sharerpw_bypass":			
-			if all([("xsrf_token" in kwargs ), ("larvel_session" in kwargs)])== False:	
-				raise RequiredValueNotFoundError("Missing required parameter 'xsrf_token' and 'larvel_session. please enter yout sharer.pw credential value to bypass the given link.")	
+			if all([("sharerpw_xsrf_token" in kwargs ), ("sharerpw_larvel_session" in kwargs)])== False:	
+				raise RequiredValueNotFoundError("Missing required parameter 'sharerpw_xsrf_token' and 'sharerpw_larvel_session. please enter yout sharer.pw credential value to bypass the given link.")	
 		
 		value = function(*args, **kwargs)
 		return value	
