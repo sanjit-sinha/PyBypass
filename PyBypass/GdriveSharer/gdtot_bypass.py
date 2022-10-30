@@ -12,16 +12,20 @@ https://new.gdtot.cfd/file/374103862
 https://new2.gdtot.sbs/file/105111102182
 
 crypt_example: b0lDek5LSCt6ZjVRR2EwZnY4T1EvVndqeDRtbCtTWmMwcGNuKy8wYWpDaz0%3D
-How to get gdtot crypt: https://www.youtube.com/watch?v=EfZ29CotRSU 
+How to get gdtot_crypt: https://www.youtube.com/watch?v=EfZ29CotRSU 
+
+Note: 
+If your 15 gb main drive get full then
+It automatically get shifted to first TD in wich he have write access, so use gdtot_crypt of a account who have only one TD.
 """
 
 
-def gdtot_bypass(url : str, crypt: str) -> str:
+def gdtot_bypass(url : str, gdtot_crypt: str) -> str:
 	
 	url = url[:-1] if url[-1] == '/' else url	
 	client  = requests.Session()
 	match = re.findall(r"https?://(.+)\.gdtot\.(.+)\/\S+\/\S+", url)[0]
-	client.cookies.update({ "crypt": crypt})
+	client.cookies.update({ "crypt": gdtot_crypt})
 	
 	
 	response = client.get(url)
