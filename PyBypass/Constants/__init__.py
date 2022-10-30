@@ -1,1 +1,1 @@
-from .regex import MAIN_REGEX
+from PyBypass.Constants.regex import MAIN_REGEX
