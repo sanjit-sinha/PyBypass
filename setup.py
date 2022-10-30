@@ -54,7 +54,8 @@ setup(
     project_source="https://github.com/sanjit-sinha/PyBypass",
     license=about["__license__"],
     
-    packages=setuptools.find_packages(),    
+    packages=setuptools.find_packages(),
+    keywords='bypasser, ads, shortners, filehosters, gdtot, appdrive, shortners
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
