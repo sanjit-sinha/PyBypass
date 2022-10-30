@@ -107,7 +107,7 @@ class PyBypass:
 		    		
 		else:
 			for (key,value) in MAIN_REGEX.items():		
-				if bool(re.match(FR"{key}", url)):
+				if bool(re.search(FR"{key}", url)):
 					bypasser_function = value[1]						
 		
 		if bypasser_function is not None:
