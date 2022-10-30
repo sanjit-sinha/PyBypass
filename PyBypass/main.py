@@ -1,3 +1,4 @@
+import re
 import requests
 from Shortners import *
 from Filehoster import *
@@ -29,7 +30,7 @@ class UnableToBypassError(Exception):
 	Raise when script is unable to bypass the given url. 
 	( possible reason can be wrong link, wrong parameters or script is patched)
 	"""
-		
+
 		
 def _requiredvaluechecker(function):
 	
@@ -41,17 +42,34 @@ def _requiredvaluechecker(function):
 	def wrapper_function(*args, **kwargs):
 		
 		func_name = args[-1]
-		if func_name == "gdot_bypass":	
+		if func_name == "gdtot_bypass":	
 			if ("crypt" in kwargs) == False:
 				raise RequiredValueNotFoundError(" Missing required parameter 'crypt'. please enter yout GDOT crypt value")
+				
+		if func_name =="appdrive_bypass":	
+			if all([("email" in kwargs ), ("password" in kwargs)])== False:	
+				raise RequiredValueNotFoundError("Missing required parameter 'email' and 'password. please enter yout appdrive credential value to bypass the given link.")
+				
+				
+		if func_name =="hubdrive_bypass":			
+			if ("crypt" in kwargs) == False:
+				raise RequiredValueNotFoundError(" Missing required parameter 'crypt'. please enter your hubdrive crypt value")
+		
+				
+		if func_name =="sharerpw_bypass":			
+			if all([("xsrf_token" in kwargs ), ("larvel_session" in kwargs)])== False:	
+				raise RequiredValueNotFoundError("Missing required parameter 'xsrf_token' and 'larvel_session. please enter yout sharer.pw credential value to bypass the given link.")
+				
+				
+			
 		
 		value = function(*args, **kwargs)
 		return value	
 		
 	return wrapper_function
-	
-	
-	
+
+
+		
 class PyBypass:
 		
 	def _init__(self):
