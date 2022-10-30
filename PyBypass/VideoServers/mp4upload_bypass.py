@@ -1,7 +1,7 @@
 import requests 
 
 """
-Regex =  https?://(www.\mp4upload\.com/)\S+
+Regex =  https?://(www\.mp4upload\.com/)\S+
 
 Website: https://www.mp4upload.com/o62z8p1qqpwi
 
