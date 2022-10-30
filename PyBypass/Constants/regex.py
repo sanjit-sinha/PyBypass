@@ -1,4 +1,3 @@
-
 MAIN_REGEX = {
 	"https?://(gplinks\.co\/)\S+": ["gplinks", "gplinks_bypass"],
 	"https?://(try2link\.com\/)\S+": ["try2link", "try2link_bypass"],
@@ -11,7 +10,7 @@ MAIN_REGEX = {
 	"https?://(tinyurl\.com\/)\S+": ["tinyurl", "tinyurl_bypass"],
 	"https?://(thinfi\.com\/)\S+": ["thinfi", "thinfi_bypass"],
 	"https?://(hypershort\.com\/)\S+": ["hypershort", "hypershort_bypass"],
-	"https?://(safeurl\.sirigan\.my.\id/)\S+": ["sirigan", "sirigan_bypass"],
+	"https?://(safeurl\.sirigan\.my\.id/)\S+": ["sirigan", "sirigan_bypass"],
 	"https?://(gtlinks\.me\/)\S+": ["gtlinks", "gtlinks_bypass"],
 	"https?://(loan\.kinemaster\.cc\/\?token=)\S+": ["gtlinks", "gtlinks_bypass"],
 	"https?://(www\.theforyou\.in\/\?token=)\S+": ["theforyou", "gtlinks_bypass"],
@@ -62,7 +61,7 @@ MAIN_REGEX = {
     'https?://(pjointe|dl4free|tenvoi|piecejointe|mesfichiers|desfichiers|megadl|dfichiers|alterupload|cjoint|1fichier|\.com/\?)\S+': ['1fichier', 'fichier_bypass'],
     'https?://(gofile\.io\/d/)\S+': ['gofile', 'gofile_bypass'],
     'https?://(hxfile\.co/)\S+': ['hxfile', 'hxfile_bypass'],
-    'https?://(krakenfiles.\com\/view/)\S+ ': ['krakenfiles', 'krakenfiles_bypass'],
+    'https?://(krakenfiles\.com\/view/)\S+ ': ['krakenfiles', 'krakenfiles_bypass'],
     'https?://(mdisk\.me\/convertor)\S+ ': ['mdisk', 'mdisk_bypass'],
     'https?://(www\.mediafire\.com\/download/)\S+ ': ['mediafire', 'mediafire_bypass'],
     'https?://(pixeldrain\.com\/(l|u)\/)\S+ ': ['pixeldrain', 'pixeldrain_bypass'],
@@ -80,7 +79,7 @@ MAIN_REGEX = {
     'https?://www\d+\.zippyshare\.com/v/[^/]+/file\.html': ['zippyshare', 'zippyshare_bypass'],
 
     "https?://(fembed|femax20|fcdn|feurl|naniplay|mm9842|layarkacaxxi|naniplay\.nanime|fembed\-hd)\.(com|net|stream|icu|in|biz)\S+" : ["fembed", "fembed_bypass"],
-    "https?://(www.\mp4upload\.com/)\S+": ["mp4upload", "mp4upload_bypass"],
+    "https?://(www\.mp4upload\.com/)\S+": ["mp4upload", "mp4upload_bypass"],
     "https?://(streamlare|sltube\.(com|org)\/v/)\S+":["streamlare", "streamlare_bypass"],
     "https?://(watchsb|streamsb)\.(com|net)\/\S+": ["streamsb", "streamsb_bypass"],
     "https?://(streamtape\.(com|to|xyz)/)\S+": ["streamtape", "streamtape_bypass"],
@@ -91,5 +90,3 @@ MAIN_REGEX = {
     "https?://(sharer\.pw\/file)\S+": ["sharerpw", "sharerpw_bypass"],
 
 }
-
-
