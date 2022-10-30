@@ -1,1 +1,1 @@
-from .bypasser import bypass
+from .main import bypass
