@@ -31,7 +31,7 @@ def racaty_bypass(url: str)-> str:
 
         response = client.post(url, headers=headers, data=data)
         soup = BeautifulSoup(response.text, "html.parser")  
-        print(
+       
 
         if (btn := soup.find(class_="btn btn-dow")): return btn["href"]
         if (unique := soup.find(id="uniqueExpirylink")): return unique["href"]                                                         
