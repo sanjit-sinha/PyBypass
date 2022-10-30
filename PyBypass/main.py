@@ -52,7 +52,7 @@ def _requiredvaluechecker(function):
 	
 	
 	
-class Pybypass:
+class PyBypass:
 		
 	def _init__(self):
 		pass
@@ -102,7 +102,7 @@ class Pybypass:
 
 
 def bypass(url, name=None, **kwargs):
-	bypasser = Pybypass()
+	bypasser = PyBypass()
 	return bypasser.bypass(url , name=name, **kwargs)
 
 					
