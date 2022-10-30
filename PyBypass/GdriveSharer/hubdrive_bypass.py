@@ -12,16 +12,21 @@ https://hubdrive.me/file/1775403030
 https://hubdrive.me/file/1888207131
 
 crypt_example: b0lDek5LSCt6ZjVRR2EwZnY4T1EvVndqeDRtbCtTWmMwcGNuKy8wYWpDaz0%3D
+
+
+Note: 
+If your 15 gb main drive get full then
+It automatically get shifted to first TD in wich he have write access, so use hubdrive_crypt of a account who have only one TD.
 """
 
 
-def hubdrive_bypass(url:str, crypt:str)-> str:
+def hubdrive_bypass(url:str, hubdrive_crypt:str)-> str:
     
     url = url[:-1] if url[-1] == '/' else url
     parsed_url = urlparse(url)
     
     client = requests.Session()  
-    client.cookies.update({'crypt': crypt})
+    client.cookies.update({'crypt': hubdrive_crypt})
     
     
     res = client.get(url)
