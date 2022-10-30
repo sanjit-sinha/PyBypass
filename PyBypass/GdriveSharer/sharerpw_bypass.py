@@ -13,11 +13,11 @@ If you use logout from website, cookies will become invalid. h
 Get your sharerpw_xsrf_token,  sharerpw_laravel_session of sharer.pw from developer tools of your browser.
 '''
 
-def sharerpw_bypass(url: str, xsrf_token:None, larvel_session: None)-> str:
+def sharerpw_bypass(url: str, sharerpw_xsrf_token:None, sharerpw_larvel_session: None)-> str:
     
     client = requests.Session()
-    client.cookies["XSRF-TOKEN"] = xsrf_token
-    client.cookies["laravel_session"] = larvel_session
+    client.cookies["XSRF-TOKEN"] = sharerpw_xsrf_token
+    client.cookies["laravel_session"] = sharerpw_larvel_session
     
     
     res = client.get(url)
