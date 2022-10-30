@@ -4,5 +4,5 @@ __version__ = "1.0"
 __author__ = "sanjit sinha"
 __author_email__ = "sanjitsinha@anipirates.eu.org"
 __license__ = "MIT"
-__copyright__ = "sanjitsinha 2022"
+__copyright__ = "copyright 2022 sanjit sinha"
 
