@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 """
-https?://(krakenfiles.\com\/view/)\S+
+https?://(krakenfiles\.com\/view/)\S+
 https://krakenfiles.com/view/JEp6lUTRUW/file.html
 """
 def krakenfiles_bypass(url:str)-> str:
