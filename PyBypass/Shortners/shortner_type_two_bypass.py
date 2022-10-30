@@ -64,7 +64,7 @@ shortner_dict =  {
          "https?://(linksxyz\.in/)\S+",
          "https://blogshangrila.com/insurance/",
          "https://cypherroot.com/",
-         16
+         13
       ],
       "https://short-jambo.com/" :[
            "https?://(short\-jambo\.com/)\S+",
