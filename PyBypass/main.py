@@ -75,7 +75,7 @@ class PyBypass:
 	@_requiredvaluechecker
 	def redirect_function(self, url, bypasser_function, **kwargs):
 		try:
-			bypassed_value = eval(bypasser_function + f"('{url},{**kwargs}')")
+			bypassed_value = eval(bypasser_function + f"('{url}')")
 		except Exception as e:
 			raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
 	
