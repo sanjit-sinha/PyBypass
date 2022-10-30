@@ -10,7 +10,7 @@ https://sharer.pw/file/XuV3WQknRbB
 NOTE: DO NOT use the logout button on website. Instead, clear the site cookies manually to log out.
 If you use logout from website, cookies will become invalid. h
 
-Get your xsrf_token,  laravel_session of sharer.pw from developer tools of your browser.
+Get your sharerpw_xsrf_token,  sharerpw_laravel_session of sharer.pw from developer tools of your browser.
 '''
 
 def sharerpw_bypass(url: str, xsrf_token:None, larvel_session: None)-> str:
