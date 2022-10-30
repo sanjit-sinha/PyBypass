@@ -58,10 +58,7 @@ def _requiredvaluechecker(function):
 				
 		if func_name =="sharerpw_bypass":			
 			if all([("xsrf_token" in kwargs ), ("larvel_session" in kwargs)])== False:	
-				raise RequiredValueNotFoundError("Missing required parameter 'xsrf_token' and 'larvel_session. please enter yout sharer.pw credential value to bypass the given link.")
-				
-				
-			
+				raise RequiredValueNotFoundError("Missing required parameter 'xsrf_token' and 'larvel_session. please enter yout sharer.pw credential value to bypass the given link.")	
 		
 		value = function(*args, **kwargs)
 		return value	
