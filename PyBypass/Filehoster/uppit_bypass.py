@@ -31,8 +31,9 @@ def uppit_bypass(url: str)-> str:
 
         response = client.post(url, headers=headers, data=data)
         soup = BeautifulSoup(response.text, "html.parser")  
-        download_url= .find("span", {'style':'background:#f9f9f9;border:1px dotted #bbb;padding:7px;'}).a.get("href"))
+        print(soup)
+        download_url= soup.find("span", {'style':'background:#f9f9f9;border:1px dotted #bbb;padding:7px;'}).a.get("href")
         
         return download_url 
 
-                               
+                   
