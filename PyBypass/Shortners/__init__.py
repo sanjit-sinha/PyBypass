@@ -4,7 +4,7 @@ from .bitly_bypass import bitly_bypass
 from .gplinks_bypass import gplinks_bypass
 from .gtlinks_bypass import gtlinks_bypass
 from .hypershort_bypass import hypershort_bypass
-from .linvertise_bypass import linvertise_bypass
+from .linkvertise_bypass import linkvertise_bypass
 from .ouo_bypass import ouo_bypass
 from .shareus_bypass import shareus_bypass
 from .shortest_bypass import shortest_bypass
