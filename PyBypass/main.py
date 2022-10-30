@@ -7,6 +7,7 @@ from PyBypass.GdriveSharer import *
 from PyBypass.VideoServers import *
 
 
+
 class BypasserNotFoundError(Exception):
 	"""
 	Raise when there is no bypasser of the giver url.
@@ -45,6 +46,7 @@ def _requiredvaluechecker(function):
 		if func_name == "gdtot_bypass":	
 			if ("gdtot_crypt" in kwargs) == False:
 				raise RequiredValueNotFoundError(" Missing required parameter 'gdtot_crypt'. please enter yout GDOT crypt value")
+			
 				
 		if func_name =="appdrive_bypass":	
 			if all([("appdrive_email" in kwargs ), ("appdrive_password" in kwargs)])== False:	
@@ -74,9 +76,17 @@ class PyBypass:
 
 	@_requiredvaluechecker
 	def redirect_function(self, url, bypasser_function, **kwargs):
+		
+		parameter = ""
+		for (key,values) in kwargs.items():
+			parameter += f" ,{key}='{values}' "
+		parameter = parameter.strip()
+	
+
 		try:
-			bypassed_value = eval(bypasser_function + f"('{url}')")
+			bypassed_value = eval(bypasser_function + f"('{url}'{parameter})")
 		except Exception as e:
+			print(e)
 			raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
 	
 		
@@ -119,5 +129,5 @@ class PyBypass:
 def bypass(url, name=None, **kwargs):
 	bypasser = PyBypass()
 	return bypasser.bypass(url , name=name, **kwargs)
-
-					
+	
+											
