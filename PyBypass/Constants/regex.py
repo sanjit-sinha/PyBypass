@@ -79,13 +79,11 @@ MAIN_REGEX = {
     'https?://(yadi.sk|disk.yandex.com)\S+': ['yandex', 'yandex_bypass'],
     'https?://www\d+\.zippyshare\.com/v/[^/]+/file\.html': ['zippyshare', 'zippyshare_bypass'],
 
-
     "https?://(fembed|femax20|fcdn|feurl|naniplay|mm9842|layarkacaxxi|naniplay\.nanime|fembed\-hd)\.(com|net|stream|icu|in|biz)\S+" : ["fembed", "fembed_bypass"],
     "https?://(www.\mp4upload\.com/)\S+": ["mp4upload", "mp4upload_bypass"],
     "https?://(streamlare|sltube\.(com|org)\/v/)\S+":["streamlare", "streamlare_bypass"],
     "https?://(watchsb|streamsb)\.(com|net)\/\S+": ["streamsb", "streamsb_bypass"],
     "https?://(streamtape\.(com|to|xyz)/)\S+": ["streamtape", "streamtape_bypass"],
-    
     
     "https?://(appdrive|driveapp|drivehub|gdflix|drivesharer|drivebit|drivelinks|driveace|drivepro)\.   (info|in|pro|top)\/file/\S+":["appdrive", "appdrive_bypass"],
     "https?://(.+)\.gdtot\.(.+)\/\S+\/\S+" : ["gdtot", "gdtot_bypass"],
@@ -93,3 +91,5 @@ MAIN_REGEX = {
     "https?://(sharer\.pw\/file)\S+": ["sharerpw", "sharerpw_bypass"],
 
 }
+
+
