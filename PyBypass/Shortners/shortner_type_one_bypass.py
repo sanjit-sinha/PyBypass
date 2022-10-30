@@ -27,7 +27,7 @@ shortner_dict =  {
      ],
      "https://rocklinks.net/": [
          "https?://(rocklinks\.net/)\S+",
-         "https://blog.disheye.com/",
+         "https://dwnld.povathemes.com/",
          10
      ],
      "https://earn.moneykamalo.com/": [
