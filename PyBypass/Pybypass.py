@@ -1,3 +1,11 @@
+import requests
+from Shortners import *
+from Filehoster import *
+from VideoServers import *
+from GdriveSharer import *
+from Constants import *
+
+
 class BypasserNotFoundError(Exception):
 	"""
 	Raise when there is no bypasser of the giver url.
@@ -76,14 +84,14 @@ class Pybypass:
 	
 		bypasser_function = None
 		if name:
-		    for (key,value) in REGEX.items():
+		    for (key,value) in MAIN_REGEX.items():
 		    	if name.lower() == value[0]:
 		    		bypasser_function = value[1] ; break
 		    	else:
 		    		raise BypasserNotFoundError("Can not find any bypasser script for the given url")
 		    		
 		else:
-			for (key,value) in REGEX.items():		
+			for (key,value) in MAIN_REGEX.items():		
 				if bool(re.match(FR"{key}", url)):
 					bypasser_function = value[1]						
 		
