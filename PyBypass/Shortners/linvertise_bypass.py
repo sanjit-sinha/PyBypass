@@ -7,10 +7,10 @@ https?://(linkvertise\.com/)\S+
 Linvertise subdomains = ["linkvertise.com", "linkvertise.net", "up-to-down.net", "link-to.net", "direct-link.net", "linkvertise.download", "file-link.net", "link-center.net", "link-target.net", "link-hub.net"]
 """
 
-def linvertise_bypass(url: str) -> str:
+def linkvertise_bypass(url: str) -> str:
 	
-	linvertise_bypass_api = "https://bypass.bot.nu/bypass2?url="
-	try: response = requests.get(linvertise_bypass_api+url).json()["destination"]
+	linkvertise_bypass_api = "https://bypass.bot.nu/bypass2?url="
+	try: response = requests.get(linkvertise_bypass_api+url).json()["destination"]
 	except: return None
 	
 	return response
