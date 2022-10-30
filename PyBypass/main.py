@@ -91,7 +91,7 @@ class PyBypass:
 		try:
 			response = requests.get(url)
 		except Exception as e:
-			raise UrlConnectionError(f"Can not establish a successful connection with the given url.  {e}")
+			raise UrlConnectionError(Can not establish a successful connection with the given url.)
 			
 		if response.status_code != 200:
 				raise UrlConnectionError("Can not establish a successful connection with the given url.")
