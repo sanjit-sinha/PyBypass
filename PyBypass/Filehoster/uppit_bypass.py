@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 """
 https?://(uppit\.com/)\S+
-http://uppit.com/9hu73urjwzrt
+http://uppit.com/qmsn1wnk2g4l
 """
 
 def uppit_bypass(url: str)-> str:
