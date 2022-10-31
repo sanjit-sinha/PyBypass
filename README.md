@@ -1,5 +1,4 @@
 ![title](https://telegra.ph/file/bfa59154e186c0ef3f3cf.jpg)
-<br/>
 <div align="center">
 <h1>A library to bypass links</h1>
 </div>
