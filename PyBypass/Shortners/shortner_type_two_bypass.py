@@ -51,8 +51,8 @@ shortner_dict =  {
      "https://techymozo.com/": [
          "https?://(techymozo\.com/)\S+",
          "https://push.bdnewsx.com/",
-         "https://themorningtribune.com/",
-         6
+         "https://veganho.co/",
+         8
      ],
      "https://linkbnao.com/":[
          "https?://(linkbnao\.com/)\S+",
