@@ -11,6 +11,9 @@ PyBasser is a python library wich can bypass various type of links and give you 
 
 Currently it can bypass various types of shortlinks, filehosters, videoservers and gdrive sharer links.
 
+https://pypi.org/project/PyBypass/
+
+
 # Supported Website links
 
 #### Shortners
