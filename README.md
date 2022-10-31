@@ -81,4 +81,4 @@ bypassed_link = bypasser.bypass("https://shorte.st/", name="shortest")
 This library used multiple scripts from  [@YukkiSenpai](https://github.com/xcscxr) github profile and [@zevtyardt](https://github.com/zevtyardt/lk21) lk21 respository.
 
 # About License
-PyBypasser is licensed under ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+PyBypass is licensed under ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
