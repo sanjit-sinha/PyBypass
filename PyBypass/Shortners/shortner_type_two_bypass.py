@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 import requests 
 import time 
 import re
@@ -22,12 +21,6 @@ shortner_dict =  {
          "https?://(ez4short\.com/)\S+",
          "https://ez4short.com/",
          "https://techmody.io/",
-         5
-     ],
-     "https://techy.veganab.co/":[
-         "https?://(techy\.veganab\.co/)\S+",
-         "https://techy.veganab.co/",
-         "https://veganab.co/",
          5
      ],
      "https://xpshort.com/": [
@@ -122,4 +115,3 @@ def shortner_type_two_bypass(shortner_url: str) ->  str:
         if bool(re.match(FR"{value[0]}", shortner_url)): return shortner_bypass(shortner_url=shortner_url, domain=value[1], referer=value[2],sleep_time=value[3])
     return None 
     
-
