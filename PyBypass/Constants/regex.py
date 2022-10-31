@@ -43,7 +43,6 @@ MAIN_REGEX = {
 	'https?://(droplink\.co/)\S+': ['droplink', 'shortner_type_two_bypass'],
 	'https?://(tnlink\.in\/)\S+': ['tnlink', 'shortner_type_two_bypass'],
 	'https?://(ez4short\.com/)\S+': ['ez4short', 'shortner_type_two_bypass'],
-	'https?://(techy\.veganab\.co/)\S+': ['veganab', 'shortner_type_two_bypass'],
 	'https?://(xpshort\.com/)\S+': ['xpshort', 'shortner_type_two_bypass'],
 	'http?://(vearnl\.in/)\S+': ['vearnl', 'shortner_type_two_bypass'],
 	'https?://(adrinolinks\.in/)\S+': ['adrinolinks', 'shortner_type_two_bypass'],
