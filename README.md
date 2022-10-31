@@ -39,6 +39,10 @@ appdrive.info, new2.gdtot.sbs, hubdrive.me, sharer.pw
 ```bash
   python -m pip install PyBypass
 ```
+Updating Library 
+```bash
+python -m pip install --upgrade PyBypass
+```
 
 ### How to use?
 PyBypass is an library wich mean you can import them into your own application and use it accordingly.
