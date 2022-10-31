@@ -37,7 +37,7 @@ appdrive.info, new2.gdtot.sbs, hubdrive.me, sharer.pw
 
 ### Installation
 ```bash
-  python -m pip install PyBypass
+ python -m pip install PyBypass
 ```
 Updating Library 
 ```bash
