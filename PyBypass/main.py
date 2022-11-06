@@ -97,7 +97,7 @@ class PyBypass:
 									
 	def bypass(self, url, name=None, **kwargs):
 		
-		if "ouo.press" in url :
+		if "ouo.press" in url:
 			pass
 			
 		else:
