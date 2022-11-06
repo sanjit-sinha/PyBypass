@@ -85,7 +85,7 @@ MAIN_REGEX = {
     "https?://(watchsb|streamsb)\.(com|net)\/\S+": ["streamsb", "streamsb_bypass"],
     "https?://(streamtape\.(com|to|xyz)/)\S+": ["streamtape", "streamtape_bypass"],
     
-    "https?://(appdrive|driveapp|drivehub|gdflix|drivesharer|drivebit|drivelinks|driveace|drivepro)\.   (info|in|pro|top)\/file/\S+":["appdrive", "appdrive_bypass"],
+    "https?://(appdrive|driveapp|drivehub|gdflix|drivesharer|drivebit|drivelinks|driveace|drivepro)\.(info|in|pro|top)\/file/\S+":["appdrive","appdrive_bypass"],
     "https?://(.+)\.gdtot\.(.+)\/\S+\/\S+" : ["gdtot", "gdtot_bypass"],
     "https?://(hubdrive)\S+": ["hubdrive", "hubdrive_bypass"],
     "https?://(sharer\.pw\/file)\S+": ["sharerpw", "sharerpw_bypass"],
