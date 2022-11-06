@@ -82,7 +82,7 @@ class PyBypass:
 	
 
 		try:
-			bypassed_value = "Ok"
+			bypassed_value = eval(bypasser_function + f"('{url}'{parameter})")
 		except Exception as e:
 			raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
 	
