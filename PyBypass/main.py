@@ -97,7 +97,7 @@ class PyBypass:
 									
 	def bypass(self, url, name=None, **kwargs):
 		
-		if "ouo.press" in url:
+		if "ouo.press" in url or "linkbnao.com" in url:
 			pass
 			
 		else:
