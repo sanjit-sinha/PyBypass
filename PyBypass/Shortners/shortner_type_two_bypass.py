@@ -97,6 +97,14 @@ shortner_dict =  {
          "https://ezeviral.com/2022/03/01/why-is-cloud-hosting-the-ideal-solution/",
          3
      ],
+     "https://open2get.in/": [
+         "https?://(open2get\.in/)\S+",
+         "https://m.open2get.in/",
+         "https://ezeviral.com/2022/03/01/why-is-cloud-hosting-the-ideal-solution/",
+         3
+     ],
+     
+     
      
 }  
  
@@ -123,4 +131,5 @@ def shortner_type_two_bypass(shortner_url: str) ->  str:
     for (key,value) in shortner_dict.items():
         if bool(re.match(FR"{value[0]}", shortner_url)): return shortner_bypass(shortner_url=shortner_url, domain=value[1], referer=value[2],sleep_time=value[3])
     return None 
+    
     
