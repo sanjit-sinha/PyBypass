@@ -6,8 +6,6 @@ from PyBypass.Constants import *
 from PyBypass.GdriveSharer import *
 from PyBypass.VideoServers import *
 
-
-
 class BypasserNotFoundError(Exception):
 	"""
 	Raise when there is no bypasser of the giver url.
@@ -84,7 +82,7 @@ class PyBypass:
 	
 
 		try:
-			bypassed_value = eval(bypasser_function + f"('{url}'{parameter})")
+			bypassed_value = "Ok"
 		except Exception as e:
 			raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
 	
@@ -112,13 +110,12 @@ class PyBypass:
 	
 	
 		bypasser_function = None
+		
 		if name:
 		    for (key,value) in MAIN_REGEX.items():
 		    	if name.lower() == value[0]:
 		    		bypasser_function = value[1] ; break
-		    	else:
-		    		raise BypasserNotFoundError("Can not find any bypasser script for the given url")
-		    		
+
 		else:
 			for (key,value) in MAIN_REGEX.items():		
 				if bool(re.search(FR"{key}", url)):
@@ -134,4 +131,3 @@ def bypass(url, name=None, **kwargs):
 	bypasser = PyBypass()
 	return bypasser.bypass(url , name=name, **kwargs)
 	
-											
