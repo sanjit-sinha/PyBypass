@@ -8,7 +8,6 @@ https?://(hypershort\.com/)\S+
 https://hypershort.com/XNKRIUPe
 """
 
-
 def hypershort_bypass(hypershort_url:str):
 	client= requests.Session()
 	
