@@ -65,11 +65,6 @@ shortner_dict =  {
           "https://www.techishant.in/blog/",
            5
      ],
-     "https://za.uy/": [
-         "https?://(za\.uy/)\S+",
-         "https://za.uy/",
-          5
-     ],
      "https://pdiskshortener.com/": [
          "https?://(pdiskshortener\.com/)\S+",
          "https://pdiskshortener.com/",
