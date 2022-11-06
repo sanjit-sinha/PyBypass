@@ -5,11 +5,6 @@ import re
  
  
 shortner_dict =  {
-     "https://earn4link.in/": [
-         "https?://(earn4link\.in/)\S+",
-         "https://m.open2get.in/",
-         1
-     ],
      "https://tekcrypt.in/tek/": [
          "https?://(tekcrypt\.in/tek/)\S+",
          "https://tekcrypt.in/tek/",
