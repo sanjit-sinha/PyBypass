@@ -90,7 +90,14 @@ shortner_dict =  {
           "https://gadgets.usanewstoday.club/",
           "https://usanewstoday.club/",
           8
-       ]
+      ],
+       "https://earn4link.in/": [
+         "https?://(earn4link\.in/)\S+",
+         "https://m.open2get.in/",
+         "https://ezeviral.com/2022/03/01/why-is-cloud-hosting-the-ideal-solution/",
+         3
+     ],
+     
 }  
  
 def shortner_bypass(shortner_url:str, domain:str, referer:str, sleep_time:int) -> str:
