@@ -27,7 +27,6 @@ MAIN_REGEX = {
 	'https?://(open\.crazyblog\.in/)\S+': ['crazyblog', 'shortner_type_one_bypass'],
 	'https?://(link\.tnvalue\.in/)\S+': ['tnvalue', 'shortner_type_one_bypass'],
 	'https?://(shortingly\.me/)\S+': ['shortingly', 'shortner_type_one_bypass'],
-	'https?://(open2get\.in/)\S+': ['open2get', 'shortner_type_one_bypass'],
 	'https?://(dulink\.in/)\S+': ['dulink', 'shortner_type_one_bypass'],
 	'https?://(bindaaslinks\.com/)\S+': ['bindaaslinks', 'shortner_type_one_bypass'],
 	'https?://(za\.uy/)\S+': ['za', 'shortner_type_one_bypass'],
@@ -54,6 +53,8 @@ MAIN_REGEX = {
 	'https?://(linkpays\.in/)\S+': ['linkpays', 'shortner_type_two_bypass'],
 	'https?://(pi\-l\.ink/)\S+': ['pi-l', 'shortner_type_two_bypass'],
 	'https?://(link\.tnlink\.in/)\S+': ['tnlink', 'shortner_type_two_bypass'],
+	'https?://(open2get\.in/)\S+': ['open2get', 'shortner_type_two_bypass'],
+	
 
     'https?://(anonfiles\.com)\S+': ['anonfiles', 'anonfiles_bypass'],
     'https?://(antfiles\.com\/\?dl\=)\S+': ['antfiles', 'antfiles_bypass'],
