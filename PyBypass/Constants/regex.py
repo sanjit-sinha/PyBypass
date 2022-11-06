@@ -66,7 +66,7 @@ MAIN_REGEX = {
     'https?://(mdisk\.me\/convertor)\S+': ['mdisk', 'mdisk_bypass'],
     'https?://(www\.mediafire\.com\/download/)\S+': ['mediafire', 'mediafire_bypass'],
     'https?://(pixeldrain\.com\/(l|u)\/)\S+': ['pixeldrain', 'pixeldrain_bypass'],
-    'https?://(racaty\.net/)\S+': ['racaty', 'racaty_bypass'],
+    'https?://(racaty\.(net|io)/)\S+': ['racaty', 'racaty_bypass'],
     'https?://(send\.cm/)\S+': ['sendcm', 'sendcm_bypass'],
     'https?://(sfile\.mobi/)\S+': ['sfile', 'sfile_bypass'],
     'https?://(www\.solidfiles\.com/v/)\S+': ['solidfiles', 'solidfiles_bypass'],
