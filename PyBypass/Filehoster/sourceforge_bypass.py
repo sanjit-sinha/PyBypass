@@ -20,4 +20,6 @@ def sourceforge_bypass(url: str) -> str:
     info = page.find("ul", {"id": "mirrorList"}).findAll("li")
     
     for mirror in info[1:]:
-        return f'https://{mirror["id"]}.dl.sourceforge.net/project/{project}/{file_path}?viasf=1'
+        link = f'https://{mirror["id"]}.dl.sourceforge.net/project/{project}/{file_path}?viasf=1'
+        return link
+        
