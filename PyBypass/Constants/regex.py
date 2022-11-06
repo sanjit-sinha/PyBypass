@@ -17,7 +17,6 @@ MAIN_REGEX = {
 	"https?://(linkvertise\.com/)\S+": ["linkvertise", "linkvertise_bypass"],
 	"https?://(shorte|festyy|gestyy|corneey|destyy|ceesty)\.(st|com)\/\S+": ["shortest", "shortest_bypass"],
 	
-	'https?://(earn4link\.in/)\S+': ['earn4link', 'shortner_type_one_bypass'],
 	'https?://(tekcrypt\.in/tek/)\S+': ['tekcrypt', 'shortner_type_one_bypass'],
 	'https?://(link\.short2url\.in/)\S+': ['short2url', 'shortner_type_one_bypass'],
 	'https?://(go\.rocklinks\.net/)\S+': ['rocklinks', 'shortner_type_one_bypass'],
@@ -41,6 +40,7 @@ MAIN_REGEX = {
 	'http?://(rocklink\.in/)\S+': ['rocklink', 'shortner_type_one_bypass'],
 	
 	'https?://(droplink\.co/)\S+': ['droplink', 'shortner_type_two_bypass'],
+	'https?://(earn4link\.in/)\S+': ['earn4link', 'shortner_type_two_bypass'],
 	'https?://(tnlink\.in\/)\S+': ['tnlink', 'shortner_type_two_bypass'],
 	'https?://(ez4short\.com/)\S+': ['ez4short', 'shortner_type_two_bypass'],
 	'https?://(xpshort\.com/)\S+': ['xpshort', 'shortner_type_two_bypass'],
