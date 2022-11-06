@@ -86,7 +86,6 @@ class PyBypass:
 		try:
 			bypassed_value = eval(bypasser_function + f"('{url}'{parameter})")
 		except Exception as e:
-			print(e)
 			raise UnableToBypassError("Can not bypass the given url. possible reason can be wrong link, wrong parameters or script is patched")
 	
 		
@@ -99,7 +98,9 @@ class PyBypass:
 	def bypass(self, url, name=None, **kwargs):			
 		
 		try:
-			response = requests.get(url)
+			if "ouo.press" in url:pass
+			else: response = requests.get(url)
+			
 		except Exception as e:
 			raise UrlConnectionError("Can not establish a successful connection with the given url.")
 			
