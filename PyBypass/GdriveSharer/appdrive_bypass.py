@@ -16,9 +16,7 @@ Note:- Each Domain require login email and password. You have to login all websi
 
 Parameters: 
 appdrive_email and appdrive_password params should be of website not GOOGLE ACCOUNT
-drive_id = team drive ID (optional) (for MyDrive, keep this field empty)
-folder_id =  drive folder ID (optional)
-
+you can configure custom drive_id and folder_id from dashboard to save file in that destination.
 
 Note: Some appdrive links don't need authorization ( email, password) like :( ex:  https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1 ) , whereas some need authorization ( ex: https://appdrive.info/file/78owWyzsKPRuU5QB2VyG)
 
@@ -39,20 +37,12 @@ appdrive_bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1", email="xyz@gm
 
 def account_login(client, url, appdrive_email, appdrive_password):
     data = {
-        'email': email,
-        'password': password
+        'email': appdrive_email,
+        'password': appdrive_password
     }
     client.post(f'https://{urlparse(url).netloc}/login', data=data)
 
-
-
-def update_account(client, url, shared_drive_id, folder_id):
-    data = {
-        'root_drive': shared_drive_id,
-        'folder': folder_id
-    }
-    client.post(f'https://{urlparse(url).netloc}/account', data=data)
-    
+ 
     
 def gen_payload(data, boundary=f'{"-"*6}_'):
     data_string = ''
@@ -75,13 +65,12 @@ def appdrive_lookalike(client, drive_link):
 	except: return drive_link
 
 			
-def appdrive_bypass(url: str, appdrive_email=None, appdrive_password=None, drive_id=None,  folder_id=None) -> str:
+def appdrive_bypass(url: str, appdrive_email=None, appdrive_password=None) -> str:
 
     client = requests.Session()
     client.headers.update({
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
     })
-    update_account(client, url, drive_id, folder_id)
     
     url = client.get(url).url 
     response = client.get(url)   
