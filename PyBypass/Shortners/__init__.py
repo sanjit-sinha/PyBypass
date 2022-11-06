@@ -15,3 +15,4 @@ from .sirigan_bypass import sirigan_bypass
 from .thinfi_bypass import thinfi_bypass
 from .tinyurl_bypass import tinyurl_bypass
 from .try2link_bypass import try2link_bypass
+from .pkin_bypass import pkin_bypass
