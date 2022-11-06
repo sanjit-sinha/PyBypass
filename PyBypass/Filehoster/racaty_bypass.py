@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 """
 https?://(racaty\.net/)\S+
 https://racaty.net/10w86dphf8y2
-https://racaty.net/10w86dphf8y2
+https://racaty.io/10w86dphf8y2
 
 """
 
