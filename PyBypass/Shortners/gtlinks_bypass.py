@@ -26,7 +26,7 @@ def gtlinks_bypass(url: str) -> str:
 		token = url.split("=")[-1]
 	
 
-	domain = "https://go.kinemaster.cc/"
+	domain = "https://go.theforyou.in/"
 
 	
 	client = requests.Session()
