@@ -16,6 +16,8 @@ MAIN_REGEX = {
 	"https?://(www\.theforyou\.in\/\?token=)\S+": ["theforyou", "gtlinks_bypass"],
 	"https?://(linkvertise\.com/)\S+": ["linkvertise", "linkvertise_bypass"],
 	"https?://(shorte|festyy|gestyy|corneey|destyy|ceesty)\.(st|com)\/\S+": ["shortest", "shortest_bypass"],
+	"https?://(pkin\.me/)\S+": ["pkin", "pkin_bypass"],
+
 	
 	'https?://(tekcrypt\.in/tek/)\S+': ['tekcrypt', 'shortner_type_one_bypass'],
 	'https?://(link\.short2url\.in/)\S+': ['short2url', 'shortner_type_one_bypass'],
