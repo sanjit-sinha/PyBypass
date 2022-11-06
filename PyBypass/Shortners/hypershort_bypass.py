@@ -29,12 +29,12 @@ def hypershort_bypass(hypershort_url:str):
 	soup = BeautifulSoup(resp.content, "html.parser")	
 	data = { input.get('name'): input.get('value') for input in inputs }
 	
-	time.sleep(3)
+	time.sleep(4)
 	tokenize_url = soup.find(name="iframe", id="anonIt").get("src")
 	tokenize_url_resp = client.get(tokenize_url)
 	soup = BeautifulSoup(tokenize_url_resp.content, "html.parser")	
 	
-	time.sleep(1)
+	time.sleep(3)
 
 	inputs = soup.find(id="go-link").find_all(name="input")
 	data = { input.get('name'): input.get('value') for input in inputs }
