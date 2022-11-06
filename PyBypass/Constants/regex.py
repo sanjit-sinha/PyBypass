@@ -29,7 +29,6 @@ MAIN_REGEX = {
 	'https?://(shortingly\.me/)\S+': ['shortingly', 'shortner_type_one_bypass'],
 	'https?://(dulink\.in/)\S+': ['dulink', 'shortner_type_one_bypass'],
 	'https?://(bindaaslinks\.com/)\S+': ['bindaaslinks', 'shortner_type_one_bypass'],
-	'https?://(za\.uy/)\S+': ['za', 'shortner_type_one_bypass'],
 	'https?://(pdiskshortener\.com/)\S+': ['pdiskshortener', 'shortner_type_one_bypass'],
 	'https?://(mdiskshortner\.link/)\S+': ['mdiskshortner', 'shortner_type_one_bypass'],
 	'https?://(go\.earnl\.xyz/)\S+': ['earnl', 'shortner_type_one_bypass'],
