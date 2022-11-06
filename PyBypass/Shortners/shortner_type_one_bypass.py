@@ -55,11 +55,6 @@ shortner_dict =  {
          "https://go.techyjeeshan.xyz/",
          5
      ],
-     "https://open2get.in/": [
-         "https?://(open2get\.in/)\S+",
-         "https://m.open2get.in/",
-         5
-     ],
      "https://dulink.in/": [
          "https?://(dulink\.in/)\S+",
          "https://tekcrypt.in/tek/",
