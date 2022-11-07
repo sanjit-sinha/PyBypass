@@ -143,7 +143,7 @@ _____
 <h1><b>Some important points</b></h1>
 </div>
 
-- Some website change their code frequently so it is possible that this script stop bypasing those website link, i will try to keep it updated if possible.
+- Some website change their code frequently so it is possible that this script will stop bypasing those website link. I will try to update them whenever i get free time.
 - You have to provide required params like  ( gdtot_crypt, appdrive_email, appdrive_password, hubdrive_crypt, sharerepw_xsrf_token, sharerpw_larvel_token) to bypass gdrive sharer links. 
 - I intentionally created different file for each bypassing scripts so that other user can easily copy paste that specific code if they want to use in their code.
 - Please give proper credits and link this repo if you are using this library in any of your projects/bot.
