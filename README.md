@@ -16,7 +16,7 @@ _____
 <h1><b>PyBypass</b></h1>
 </div>
 
-PyBypass is a python library wich can bypass various type of links and give you direct access to the content of the link without getting bothered by annoying ads websites redirection.
+PyBypass is a python library wich can bypass various type of links and give you direct access to the content of the link without getting bothered by annoying ads and websites redirection.
 
 Currently it can bypass various types of shortlinks, filehosters, videoservers and gdrive sharer links.
 
