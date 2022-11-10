@@ -5,7 +5,7 @@ from bs4  import BeautifulSoup
 
 """
 https?://(try2link\.com\/)\S+
-https://try2link.com/VrTmBY
+https://try2link.com/bfHVhj0
 """
 
 def try2link_bypass(url):
