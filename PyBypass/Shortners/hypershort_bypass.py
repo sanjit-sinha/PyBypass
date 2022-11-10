@@ -9,12 +9,14 @@ https://hypershort.com/XNKRIUPe
 """
 
 def hypershort_bypass(hypershort_url:str):
+	dom = "https://blog.miuiflash.com"
+
 	client= requests.Session()
 	
 	response= client.get(hypershort_url)
 	soup = BeautifulSoup(response.content, "html.parser")	
 	
-	token_response = client.get("https://blog.miuiflash.com/links/createToken.js").text
+	token_response = client.get(f"{dom}/links/createToken.js").text
 	token_regex = re.search("itsToken\.value = \S+", token_response)
 	token = token_regex[0].split("=")[1].removesuffix('"').removeprefix(' "')
 
@@ -37,7 +39,7 @@ def hypershort_bypass(hypershort_url:str):
 
 	inputs = soup.find(id="go-link").find_all(name="input")
 	data = { input.get('name'): input.get('value') for input in inputs }
-	final_response = client.post("https://blog.miuiflash.com/blog/links/go", data=data,cookies= tokenize_url_resp.cookies, headers={"x-requested-with": "XMLHttpRequest", "referer":tokenize_url}).json()["url"]
+	final_response = client.post(f"{dom}/blog/links/go", data=data, cookies= tokenize_url_resp.cookies, headers={"x-requested-with": "XMLHttpRequest", "referer":tokenize_url}).json()["url"]
 	
 	return final_response
 	

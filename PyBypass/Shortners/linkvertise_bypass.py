@@ -9,7 +9,7 @@ Linvertise subdomains = ["linkvertise.com", "linkvertise.net", "up-to-down.net",
 
 def linkvertise_bypass(url: str) -> str:
 	
-	linkvertise_bypass_api = "https://bypass.bot.nu/bypass2?url="
+	linkvertise_bypass_api = "https://bypass.pm/bypass2?url="
 	try: response = requests.get(linkvertise_bypass_api+url).json()["destination"]
 	except: return None
 	
