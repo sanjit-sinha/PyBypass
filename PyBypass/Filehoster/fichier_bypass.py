@@ -21,8 +21,8 @@ def fichier_bypass(url:str) -> str:
 	rate_limit = soup.find("div", {"class": "ct_warn"})
 	if "you must wait" in str(rate_limit).lower():
 		try:
-		    numbers = [int(word) for word in str(rate_limit).split() if word.isdigit()]
-		    return f"1fichier.com is on limit for your ip. please wait {numbers[0]} min before trying again."
+			numbers = [int(word) for word in str(rate_limit).split() if word.isdigit()]
+			return f"1fichier.com is on limit for your ip. please wait {numbers[0]} min before trying again."
 		except:
 			return "1fichier.com is on limit for your ip. please wait few minutes/hour before trying again."
 

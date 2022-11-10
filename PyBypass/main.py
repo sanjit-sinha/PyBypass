@@ -43,22 +43,22 @@ def _requiredvaluechecker(function):
 		func_name = args[-1]
 		if func_name == "gdtot_bypass":	
 			if ("gdtot_crypt" in kwargs) == False:
-				raise RequiredValueNotFoundError("Missing required parameter 'gdtot_crypt'. please enter your GDOT crypt value")
+				raise RequiredValueNotFoundError("Missing required parameter 'gdtot_crypt'. Please enter your GDOT crypt value")
 			
 				
 		if func_name =="appdrive_bypass":	
 			if all([("appdrive_email" in kwargs ), ("appdrive_password" in kwargs)])== False:	
-				raise RequiredValueNotFoundError("Missing required parameter 'appdrive_email' and 'appdrive_password. please enter yout appdrive credentials to bypass the given link.")
+				raise RequiredValueNotFoundError("Missing required parameter 'appdrive_email' and 'appdrive_password'. Please enter yout appdrive credentials to bypass the given link.")
 				
 				
 		if func_name =="hubdrive_bypass":			
 			if ("hubdrive_crypt" in kwargs) == False:
-				raise RequiredValueNotFoundError("Missing required parameter 'hubdrive_crypt'. please enter your hubdrive crypt value")
+				raise RequiredValueNotFoundError("Missing required parameter 'hubdrive_crypt'. Please enter your hubdrive crypt value")
 		
 				
 		if func_name =="sharerpw_bypass":			
-			if all([("sharerpw_xsrf_token" in kwargs ), ("sharerpw_larvel_session" in kwargs)])== False:	
-				raise RequiredValueNotFoundError("Missing required parameter 'sharerpw_xsrf_token' and 'sharerpw_larvel_session. please enter yout sharer.pw credential value to bypass the given link.")	
+			if all([("sharerpw_xsrf_token" in kwargs ), ("sharerpw_laravel_session" in kwargs)])== False:
+				raise RequiredValueNotFoundError("Missing required parameter 'sharerpw_xsrf_token' and 'sharerpw_laravel_session'. Please enter yout sharer.pw credential value to bypass the given link.")
 		
 		value = function(*args, **kwargs)
 		return value	
@@ -68,7 +68,7 @@ def _requiredvaluechecker(function):
 
 		
 class PyBypass:
-		
+
 	def _init__(self):
 		pass
 
@@ -84,47 +84,47 @@ class PyBypass:
 		try:
 			bypassed_value = eval(bypasser_function + f"('{url}'{parameter})")
 		except Exception as e:
-			raise UnableToBypassError("Can not able to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
+			raise UnableToBypassError("Unable to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
 	
 		
 		if bypassed_value == None:
-		    raise UnableToBypassError("Can not able to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
+			raise UnableToBypassError("Unable to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
 		return bypassed_value
 		 
 		 
 									
 	def bypass(self, url, name=None, **kwargs):
-		
+
 		if "ouo.press" in url or "linkbnao.com" in url or "go.earnl.xyz" in url:
 			pass
-			
+
 		else:
 			try:
 				response = requests.get(url)
-				
+
 			except Exception as e:
 				raise UrlConnectionError("Not able to establish a successful connection with given URL. It is probably protected by cloudfare.")
 			
 			if response.status_code != 200:
-				raise UrlConnectionError("Not able to establisha a successful connection with given URL. It is probably protected by cloudfare.")
+				raise UrlConnectionError("Not able to establish a successful connection with given URL. It is probably protected by cloudfare.")
 	
 	
 		bypasser_function = None
-		
+
 		if name:
-		    for (key,value) in MAIN_REGEX.items():
-		    	if name.lower() == value[0]:
-		    		bypasser_function = value[1] ; break
+			for (key,value) in MAIN_REGEX.items():
+				if name.lower() == value[0]:
+					bypasser_function = value[1] ; break
 
 		else:
 			for (key,value) in MAIN_REGEX.items():		
 				if bool(re.search(FR"{key}", url)):
 					bypasser_function = value[1]						
-		
+
 		if bypasser_function is not None:
 			return self.redirect_function(url, bypasser_function, **kwargs)
 		else:
-			raise BypasserNotFoundError("can not find a bypasser script found for this URL.")
+			raise BypasserNotFoundError("Could not find a bypasser script found for this URL.")
 
 
 def bypass(url, name=None, **kwargs):

@@ -1,7 +1,7 @@
 
 <div align="center">
  <h1>A python library to bypass links</h1>
-<img src="https://telegra.ph/file/d83e9d64160666fec7ad6.png" align="center" style="width: 100%" />
+<img src="https://telegra.ph/file/d83e9d64160666fec7ad6.png" align="center" style="width: 100%" alt="Picture Unavailable!">
 </div>
 
 ------
@@ -58,7 +58,7 @@ you can also find PyBypass n pypi.org https://pypi.org/project/PyBypass/
 ```
 **Updating Library**
 ```bash
-python -m pip install --upgrade PyBypass
+ python -m pip install --upgrade PyBypass
 ```
 
 ------
@@ -88,13 +88,24 @@ bypassed_link = bypasser.bypass("https://link-center.net/209924/ofbulk", name="l
 
 ```
 
-
 - To bypass gdrivesharer links you have to provide some parameters wich are required to bypass the link.
 
 ```python
-import PyBypass as bypasser
+import PyBypass
 
-bypassed_link = bypasser.bypass("https://new2.gdtot.sbs/file/105111102182", gdtot_crypt="b0lDek5LSCt6ZjVRR2EwZnY4T1EvVndqeDRtbCtTWmMwcGNuKy8wYWpDaz0%3D")
+bypassed_link = PyBypass.bypass("https://new2.gdtot.sbs/file/105111102182", gdtot_crypt="PUT YOUR CRYPT HERE")
+
+```
+```python
+import PyBypass
+
+bypassed_link = PyBypass.bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1", appdrive_email="PUT YOUR AppDrive Email HERE", appdrive_password="PUT YOUR AppDrive Password HERE")
+
+```
+```python
+import PyBypass
+
+bypassed_link = PyBypass.bypass("https://sharer.pw/file/5SQxN0llKsgZ", sharerpw_xsrf_token="PUT YOUR Sharerpw XSRF HERE", sharerpw_laravel_session="PUT YOUR Sharerpw Laravel HERE")
 
 ```
 <details>
@@ -119,13 +130,13 @@ You can also configure custom drive_id and folder_id from dashboard to save file
 	</li>
 <br>
    <li><b>Sharer.pw parameters.</b><br><br>
-	sharer.pw links  take required parameter <b>sharerpw_xsrf_token</b> and <b> sharerpw_larvel_token</b>  to bypass the  sharer.pw links. You can find these parameters in developer tool of browser after logging in with your google account. 
+	sharer.pw links  take required parameter <b>sharerpw_xsrf_token</b> and <b> sharerpw_laravel_token</b> to bypass the  sharer.pw links. You can find these parameters in developer tool of browser after logging in with your google account. 
 	</li>
     
 </ul>
 </details>
 
-- You can add try and catch exceptions while bypassing the inks to get better information.
+- You can add try and catch exceptions while bypassing the inks to get more information.
 ```python
 from PyBypass import bypass
 
@@ -163,7 +174,7 @@ This library used multiple scripts from  [@YukkiSenpai](https://github.com/xcscx
 <h1><b>Copyright and License</b></h1>
 </div>
 <br>
-<img src="https://telegra.ph/file/b5850b957f081cfe5f0a6.png" align="right" width="100">
+<img src="https://telegra.ph/file/b5850b957f081cfe5f0a6.png" align="right" width="100" alt="Image Unavailable!">
   
 
 * copyright (C) 2022 by [Sanjit sinha](https://github.com/sanjit-sinha)

@@ -37,11 +37,11 @@ def gdtot_bypass(url : str, gdtot_crypt: str) -> str:
 	if "gd" not in params or not params["gd"] or params["gd"][0] == "false":
 		return "Something went wrong. Could not generate GDrive URL for your GDTot Link"
 	else:
-	       try: decoded_id = base64.b64decode(str(params["gd"][0])).decode("utf-8")    
-	       except : return  "Something went wrong. Could not generate GDrive URL for your GDTot Link"
+		try: decoded_id = base64.b64decode(str(params["gd"][0])).decode("utf-8")
+		except : return  "Something went wrong. Could not generate GDrive URL for your GDTot Link"
 	       
-	       drive_link = f"https://drive.google.com/open?id={decoded_id}"
-	       return drive_link
+	drive_link = f"https://drive.google.com/open?id={decoded_id}"
+	return drive_link
 	       
 
 
