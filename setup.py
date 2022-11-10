@@ -6,7 +6,7 @@ import os
 #==========================================================================================
 
 CURRENT_PYTHON = sys.version_info[:2]
-REQUIRED_PYTHON = (3, 7)
+REQUIRED_PYTHON = (3, 8)
 
 if CURRENT_PYTHON < REQUIRED_PYTHON:
     sys.stderr.write(
@@ -62,7 +62,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],                               
-    python_requires='>=3.7, <4',     
+    python_requires='>=3.8, <4',     
     package_dir={"PyBypass":"PyBypass"},    
     install_requires=requires,
     zip_safe=True
