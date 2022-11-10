@@ -29,8 +29,7 @@ https://gdflix.top/file/8orswDGb6i
 https://gdflix.pro/file/24pEEKH1Vp
 
 
-appdrive_bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1", appdrive_email="xyz@gmail.com", appdrive_password="appdrive", drive_id="your_td_drive_id", folder_id="folder_id_of_that_td")
-
+appdrive_bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1", appdrive_email="xyz@gmail.com", appdrive_password="appdrive")
 
 """
 
@@ -102,7 +101,6 @@ def appdrive_bypass(url: str, appdrive_email=None, appdrive_password=None) -> st
     elif  'error' in response and response['error']: return response['message']
     else: return "Something went wrong. Could not generate GDrive URL for your Given Link"
     
-
 
 
 
