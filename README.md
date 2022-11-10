@@ -136,7 +136,7 @@ You can also configure custom drive_id and folder_id from dashboard to save file
 </ul>
 </details>
 
-- You can add try and catch exceptions while bypassing the inks to get more information.
+- You can add try and catch exceptions while bypassing the links to get more information.
 ```python
 from PyBypass import bypass
 
