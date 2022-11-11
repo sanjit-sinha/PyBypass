@@ -1,7 +1,9 @@
 # Version 2.0.0
-- switched from Beta to Stable 
+
+- Switched from Beta to Stable
 - Fixed major name parameter not working Bug.
 - Improved error handling and readme.
 - Fixed scripts of ->
- >ouo.press , try2link, hypershort  linkbnao, gtlinks, earn4link, short-jambo
-racaty, sendcm, solidfiles, wetransfer, appdrive, pkin.me 
+
+> ouo.press , try2link, hypershort linkbnao, gtlinks, earn4link, short-jambo
+> racaty, sendcm, solidfiles, wetransfer, appdrive, pkin.me

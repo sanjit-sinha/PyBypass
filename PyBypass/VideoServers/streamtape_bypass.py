@@ -1,7 +1,6 @@
 import requests
 import re
 
-
 """
 Website : streamtape.com | streamtape.xyz | streamtape.to
 
@@ -14,7 +13,8 @@ Note: Bypassed url only open/download with the ip of machine you are working on
 
 """
 
-def streamtape_bypass( url:str)-> str:
+
+def streamtape_bypass(url: str) -> str:
     response = requests.get(url)
 
     if (videolink := re.findall(r"document.*((?=id\=)[^\"']+)", response.text)):
