@@ -20,7 +20,7 @@ PyBypass is a python library wich can bypass various type of links and give you 
 
 Currently it can bypass various types of shortlinks, filehosters, videoservers and gdrive sharer links.
 
-you can also find PyBypass n pypi.org https://pypi.org/project/PyBypass/
+you can also find PyBypass in pypi.org https://pypi.org/project/PyBypass/
 
 -----
 
