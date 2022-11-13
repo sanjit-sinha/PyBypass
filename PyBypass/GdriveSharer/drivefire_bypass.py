@@ -26,9 +26,7 @@ def drivefire_bypass(url: str, drivefire_crypt: str) -> str:
     req_url = f"{parsed_url.scheme}://{parsed_url.netloc}/ajax.php?ajax=download"
 
     try:
-        res = \
-        client.post(req_url, headers={'x-requested-with': 'XMLHttpRequest'}, data={'id': url.split('/')[-1]}).json()[
-            'file']
+        res = client.post(req_url, headers={'x-requested-with': 'XMLHttpRequest'}, data={'id': url.split('/')[-1]}).json()['file']
         gd_id = res.rsplit("/", 1)[-1]
     except:
         return "Something went wrong. Could not generate GDrive URL for your Hubdrive Link"

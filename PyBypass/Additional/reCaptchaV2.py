@@ -82,33 +82,28 @@ class reCaptchaV2(object):
 
     def __click_check_box__(driver):
         driver.switch_to.frame(driver.find_element(By.TAG_NAME, "iframe"))
-        check_box = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#recaptcha-anchor")))
+        check_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#recaptcha-anchor")))
         check_box.click()
         driver.switch_to.default_content()
 
     def __click_audio_button__(driver):
         driver.switch_to.frame(driver.find_elements(By.TAG_NAME, "iframe")[2])
-        audio_btn = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#recaptcha-audio-button")))
+        audio_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#recaptcha-audio-button")))
         audio_btn.click()
         driver.switch_to.default_content()
 
     def __get_audio_link__(driver, play):
         voice = driver.find_elements(By.TAG_NAME, "iframe")[2]
         driver.switch_to.frame(voice)
-        download_btn = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, ".rc-audiochallenge-tdownload-link")))
+        download_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".rc-audiochallenge-tdownload-link")))
         link = download_btn.get_attribute('href')
         if play:
-            play_button = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".rc-audiochallenge-play-button > button")))
+            play_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".rc-audiochallenge-play-button > button")))
             play_button.click()
         return link
 
     def __type_text__(driver, text):
-        text_field = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#audio-response")))
+        text_field = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#audio-response")))
         text_field.send_keys(text, Keys.ENTER)
         driver.switch_to.default_content()
 

@@ -1,4 +1,4 @@
-import requests
+import requests 
 
 """
 Regex =  https?://(www\.mp4upload\.com/)\S+
@@ -13,22 +13,22 @@ requests.get("https://www6.mp4upload.com:282/d/sgxyzga5z3b4quuor2wbkzaslp3ksd66f
 verify=False) 
 """
 
-
 def mp4upload_bypass(url):
-    url = url[:-1] if url[-1] == '/' else url
-    headers = {'referer': 'https://mp4upload.com'}
-    token = url.split("/")[-1]
+	url = url[:-1] if url[-1] == '/' else url	
+	headers = {'referer':'https://mp4upload.com'}
+	token = url.split("/")[-1]		
+		
+	data =      {
+	             'op': 'download2',
+	             'id': token,
+	             'rand': '','referer': 'https://www.mp4upload.com/',
+	             'method_free': '','method_premium':''
+	             }
+	
+	response = requests.post(url, headers=headers, data=data,allow_redirects=False)
+	
+	bypassed_json = {}
+	bypassed_json["bypassed_url"] = response.headers["Location"]
+	bypassed_json["headers "] = headers 
+	return bypassed_json
 
-    data = {
-        'op': 'download2',
-        'id': token,
-        'rand': '', 'referer': 'https://www.mp4upload.com/',
-        'method_free': '', 'method_premium': ''
-    }
-
-    response = requests.post(url, headers=headers, data=data, allow_redirects=False)
-
-    bypassed_json = {}
-    bypassed_json["bypassed_url"] = response.headers["Location"]
-    bypassed_json["headers "] = headers
-    return bypassed_json

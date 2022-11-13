@@ -11,12 +11,17 @@ Note: Bypassed json file urls are restricted to ip of the device where script ww
 
 import requests
 
+def fembed_bypass(url: str) -> str:	
 
-def fembed_bypass(url: str) -> str:
-    url = url[:-1] if url[-1] == '/' else url
+	url = url[:-1] if url[-1] == '/' else url
+	
+	TOKEN = url.split("/")[-1]	
+	API = "https://fembed-hd.com/api/source/"
+	
+	response = requests.post(API+TOKEN).json()["data"]
+	return response
+	
+	
 
-    TOKEN = url.split("/")[-1]
-    API = "https://fembed-hd.com/api/source/"
 
-    response = requests.post(API + TOKEN).json()["data"]
-    return response
+

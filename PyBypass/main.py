@@ -45,53 +45,43 @@ def _requiredvaluechecker(function):
         func_name = args[-1]
         if func_name == "gdtot_bypass":
             if ("gdtot_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'gdtot_crypt'. Please enter your GDOT crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'gdtot_crypt'. Please enter your GDOT crypt value")
 
         if func_name == "appdrive_bypass":
             if all([("appdrive_email" in kwargs), ("appdrive_password" in kwargs)]) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'appdrive_email' and 'appdrive_password'. Please enter yout appdrive credentials to bypass the given link.")
+                raise RequiredValueNotFoundError("Missing required parameter 'appdrive_email' and 'appdrive_password'. Please enter yout appdrive credentials to bypass the given link.")
 
         if func_name == "drivebuzz_bypass":
             if ("drivebuzz_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'drivebuzz_crypt'. Please enter your drivebuzz crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'drivebuzz_crypt'. Please enter your drivebuzz crypt value")
 
         if func_name == "drivefire_bypass":
             if ("drivefire_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'drivefire_crypt'. Please enter your drivefire crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'drivefire_crypt'. Please enter your drivefire crypt value")
 
         if func_name == "gadrive_bypass":
             if ("gadrive_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'gadrive_crypt'. Please enter your gadrive crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'gadrive_crypt'. Please enter your gadrive crypt value")
 
         if func_name == "hubdrive_bypass":
             if ("hubdrive_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'hubdrive_crypt'. Please enter your hubdrive crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'hubdrive_crypt'. Please enter your hubdrive crypt value")
 
         if func_name == "jiodrive_bypass":
             if ("jiodrive_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'jiodrive_crypt'. Please enter your jiodrive crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'jiodrive_crypt'. Please enter your jiodrive crypt value")
 
         if func_name == "katdrive_bypass":
             if ("katdrive_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'katdrive_crypt'. Please enter your katdrive crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'katdrive_crypt'. Please enter your katdrive crypt value")
 
         if func_name == "kolop_bypass":
             if ("kolop_crypt" in kwargs) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'kolop_crypt'. Please enter your kolop crypt value")
+                raise RequiredValueNotFoundError("Missing required parameter 'kolop_crypt'. Please enter your kolop crypt value")
 
         if func_name == "sharerpw_bypass":
             if all([("sharerpw_xsrf_token" in kwargs), ("sharerpw_laravel_session" in kwargs)]) == False:
-                raise RequiredValueNotFoundError(
-                    "Missing required parameter 'sharerpw_xsrf_token' and 'sharerpw_laravel_session'. Please enter yout sharer.pw credential value to bypass the given link.")
+                raise RequiredValueNotFoundError("Missing required parameter 'sharerpw_xsrf_token' and 'sharerpw_laravel_session'. Please enter yout sharer.pw credential value to bypass the given link.")
 
         value = function(*args, **kwargs)
         return value
@@ -115,12 +105,10 @@ class PyBypass:
         try:
             bypassed_value = eval(bypasser_function + f"('{url}'{parameter})")
         except Exception as e:
-            raise UnableToBypassError(
-                "Unable to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
+            raise UnableToBypassError("Unable to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
 
         if bypassed_value == None:
-            raise UnableToBypassError(
-                "Unable to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
+            raise UnableToBypassError("Unable to bypass this link. Possible reason can be cloudfare protection, wrong link, wrong parameters, expired  link or script is patched")
         return bypassed_value
 
     def bypass(self, url, name=None, **kwargs):
@@ -133,12 +121,10 @@ class PyBypass:
                 response = requests.get(url)
 
             except Exception as e:
-                raise UrlConnectionError(
-                    "Not able to establish a successful connection with given URL. It is probably protected by cloudfare.")
+                raise UrlConnectionError("Not able to establish a successful connection with given URL. It is probably protected by cloudfare.")
 
             if response.status_code != 200:
-                raise UrlConnectionError(
-                    "Not able to establish a successful connection with given URL. It is probably protected by cloudfare.")
+                raise UrlConnectionError("Not able to establish a successful connection with given URL. It is probably protected by cloudfare.")
 
         bypasser_function = None
 

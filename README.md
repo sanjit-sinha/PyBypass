@@ -32,28 +32,16 @@ you can also find PyBypass in pypi.org https://pypi.org/project/PyBypass/
 
 #### Shortners
 
-> try2link.com, adf.ly, bit.ly, ouo.io, ouo.press, shareus.in, shortly.xyz, tinyurl.com, thinfi.com, hypershort.com
-> ,safeurl.sirigan.my.id, gtlinks.me, loan.kinemaster.cc, theforyou.in, linkvertise.com, shorte.st, earn4link.in,
-> tekcrypt.in, link.short2url.in, go.rocklinks.net, rocklinks.net, earn.moneykamalo.com, m.easysky.in,
-> indianshortner.in,
-> open.crazyblog.in, link.tnvalue.in, shortingly.me, open2get.in, dulink.in, bindaaslinks.com, za.uy,
-> pdiskshortener.com,
-> mdiskshortner.link, go.earnl.xyz, g.rewayatcafe.com, ser2.crazyblog.in, bitshorten.com, rocklink.in, droplink.co,
-> tnlink.in, ez4short.com, xpshort.com, vearnl.in, adrinolinks.in, techymozo.com, linkbnao.com, linksxyz.in,
-> short-jambo.com, ads.droplink.co.in, linkpays.in, pi-l.ink, link.tnlink.in , pkin.me
+> try2link.com, adf.ly, bit.ly, ouo.io, ouo.press, shareus.in, shortly.xyz, tinyurl.com, thinfi.com, hypershort.com, safeurl.sirigan.my.id, gtlinks.me, loan.kinemaster.cc, theforyou.in, linkvertise.com, shorte.st, earn4link.in,tekcrypt.in, link.short2url.in, go.rocklinks.net, rocklinks.net, earn.moneykamalo.com, m.easysky.in, indianshortner.in,open.crazyblog.in, link.tnvalue.in, shortingly.me, open2get.in, dulink.in, bindaaslinks.com, za.uy, pdiskshortener.com, mdiskshortner.link, go.earnl.xyz, g.rewayatcafe.com, ser2.crazyblog.in, bitshorten.com, rocklink.in, droplink.co, tnlink.in, ez4short.com, xpshort.com, vearnl.in, adrinolinks.in, techymozo.com, linkbnao.com, linksxyz.in, short-jambo.com, ads.droplink.co.in, linkpays.in, pi-l.ink, link.tnlink.in , pkin.me
 
 ### Filehoster
 
-> nonfiles.com, antfiles.com, 1fichier.com, gofile.io, hxfile.co, krakenfiles.com, mdisk.me, mediafire.com,
-> pixeldrain.com, racaty.net, send.cm, sfile.mobi, solidfiles.com, sourceforge.net, uploadbaz.me, upload.ee, uppit.com,
-> userscloud.com, we.tl, disk.yandex.com, zippyshare.com, wetransfer.com
+> nonfiles.com, antfiles.com, 1fichier.com, gofile.io, hxfile.co, krakenfiles.com, mdisk.me, mediafire.com, pixeldrain.com, racaty.net, send.cm, sfile.mobi, solidfiles.com, sourceforge.net, uploadbaz.me, upload.ee, uppit.com, userscloud.com, we.tl, disk.yandex.com, zippyshare.com, wetransfer.com
 
 ### Gdrivesharer
 
-> appdrive.info, new2.gdtot.sbs, hubdrive.me, sharer.pw, drivebuzz.icu, drivefire.co, jiodrive.xyz, katdrive.net,
-> kolop.icu
-( appdrive lookalike dmains: driveapp.in, drivehub.in, gdflix.pro, drivesharer.in, drivebit.in, drivelinks.in,
-> driveace.in, drivepro.in, gdflix.top & more - Check from Regex)
+> appdrive.info, new2.gdtot.sbs, hubdrive.me, sharer.pw, drivebuzz.icu, drivefire.co, jiodrive.xyz, katdrive.net, kolop.icu
+( appdrive lookalike dmains: driveapp.in, drivehub.in, gdflix.pro, drivesharer.in, drivebit.in, drivelinks.in, driveace.in, drivepro.in, gdflix.top & more - Check from Regex)
 
 ### VideoServers
 
@@ -93,8 +81,7 @@ bypassed_link = bypasser.bypass("https://www40.zippyshare.com/v/DkywSXEu/file.ht
 print(bypassed_link)
 ```
 
-- some website have so many subdomains so it is hard to auto detect every link. use parameter `name` to bypass those
-  type of links.
+- some website have so many subdomains so it is hard to auto detect every link. use parameter `name` to bypass those type of links.
 - ( some common website like those are adfly, linkvertise, short.st, appdrive etc. )
 - you can find the list on `name` parameter wich can be used for diferent websites [here](https://katb.in/abefuqetoxe)
 
@@ -120,18 +107,14 @@ Kolop</i>
 ```python
 import PyBypass
 
-bypassed_link = PyBypass.bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1",
-                                appdrive_email="PUT YOUR AppDrive Email HERE",
-                                appdrive_password="PUT YOUR AppDrive Password HERE")
+bypassed_link = PyBypass.bypass("https://appdrive.info/file/m6p1PbFF49aqb4MOHrz1", appdrive_email="PUT YOUR AppDrive Email HERE", appdrive_password="PUT YOUR AppDrive Password HERE")
 
 ```
 
 ```python
 import PyBypass
 
-bypassed_link = PyBypass.bypass("https://sharer.pw/file/5SQxN0llKsgZ",
-                                sharerpw_xsrf_token="PUT YOUR Sharerpw XSRF HERE",
-                                sharerpw_laravel_session="PUT YOUR Sharerpw Laravel HERE")
+bypassed_link = PyBypass.bypass("https://sharer.pw/file/5SQxN0llKsgZ", sharerpw_xsrf_token="PUT YOUR Sharerpw XSRF HERE", sharerpw_laravel_session="PUT YOUR Sharerpw Laravel HERE")
 
 ```
 
@@ -205,12 +188,9 @@ _____
 <h1><b>Some important points</b></h1>
 </div>
 
-- Some website change their code frequently so it is possible that this script will stop bypasing those website link. I
-  will try to update them whenever i get free time.
-- You have to provide required params like  ( gdtot_crypt, appdrive_email, appdrive_password, hubdrive_crypt,
-  sharerepw_xsrf_token, sharerpw_larvel_token) to bypass gdrive sharer links.
-- I intentionally created different file for each bypassing scripts so that other user can easily copy paste that
-  specific code if they want to use in their code.
+- Some website change their code frequently so it is possible that this script will stop bypasing those website link. I will try to update them whenever i get free time.
+- You have to provide required params like  ( gdtot_crypt, appdrive_email, appdrive_password, hubdrive_crypt, sharerepw_xsrf_token, sharerpw_larvel_token) to bypass gdrive sharer links.
+- I intentionally created different file for each bypassing scripts so that other user can easily copy paste that specific code if they want to use in their code.
 - Please give proper credits and link this repo if you are using this library in any of your projects/bot.
 
 ______
