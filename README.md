@@ -5,11 +5,7 @@
 </div>
 
 ------
-**Note: New and Stable Version of this library is available. Please upgrade it by command**
-```
-python -m pip install --upgrade PyBypass
-```
-**You can read the Changelogs [here](https://github.com/sanjit-sinha/PyBypass/blob/main/CHANGELOGS.md)**
+**Note: This repository is no longer being maintained and may not function properly. This is due to the poor quality of the code and the website's continuous patching of bypasses.
 _____
 
 <div align="center">
