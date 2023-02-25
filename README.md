@@ -5,7 +5,7 @@
 </div>
 
 ------
-** Note: This repository is no longer being maintained and may not function properly. This is due to the poor quality of the code and the website's continuous patching of bypasses.
+<b>Note</b>: This repository is no longer being maintained and may not function properly. This is due to the poor quality of the code and the website's continuous patching of bypasses.
 _____
 
 <div align="center">
