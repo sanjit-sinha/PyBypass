@@ -1,7 +1,7 @@
 
 <div align="center">
- <h1>A python library to bypass links</h1>
 <img src="https://socialify.git.ci/Sanjit-sinha/PyBypass/image?description=1&font=Inter&forks=1&language=1&name=1&owner=1&pattern=Plus&stargazers=1&theme=Dark" align="center" style="width: 100%" alt="Picture Unavailable!">
+<h1>A Python Library To Bypass Links</h1>
 </div>
 
 ------
